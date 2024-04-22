@@ -36,13 +36,13 @@
 
 
             <section class="flex justify-between p-3">
-                <a href="./producto.html">
+                <a href="/producto/{{$noticia->producto->id}}">
                     <div class="p-1 productoBoton text-white rounded-3xl border border">
                         {{ $noticia->producto->name }}
                     </div>
                 </a>
                 <div class="text-xs font-light content-center">Publicado
-                    @php $date=$noticia->publish_at;  @endphp
+                    @php $date=$noticia->published_at;  @endphp
                         {{  \Carbon\Carbon::parse($date)->diffForHumans()}}
                 </div>
 

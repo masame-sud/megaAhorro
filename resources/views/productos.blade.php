@@ -10,13 +10,13 @@
         <h1>
             <a href="/categorias">
                 <span class="font-bold text-2xl">
-                    {{ $categoria[0]->name }}
+                    {{ $subcategoria[0]->categoria->name }}
                 </span>
             </a>
              /
             <a href="javascript:window.history.back();">
                 <span class="font-bold text-2xl">
-                    {{ $subcategoria->name}}
+                    {{ $subcategoria[0]->name}}
                 </span>
             </a>
         </h1>

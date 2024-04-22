@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('p1');
             $table->string('p2')->nullable();
             $table->string('p3')->nullable();
-            $table->timestamp('publish_at')->nullable();
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }

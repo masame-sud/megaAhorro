@@ -11,6 +11,7 @@
 
             <h1 class="font-bold text-2xl">
                 <span class="text-xs">Volver de</span>
+
                 {{ $categoria->name }}
             </h1>
 
@@ -33,7 +34,7 @@
                 <article class="p-2 flex flex-wrap gap-6 justify-around">
 
                     @foreach ($subcategorias as $subcategoria)
-                        <a href="../productos/{{ $subcategoria->id}}">
+                        <a href="../subcategorias/{{ $subcategoria->id}}">
                             <div class="p-3 rounded-3xl border border-2 border-slate-500 text-center">
                                 {{ $subcategoria->name}}
                             </div>

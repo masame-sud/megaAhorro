@@ -19,7 +19,7 @@ class SupermercadoproductoSeeder extends Seeder
 
         $mercadona = DB::table("supermercados")->where("name","Mercadona")->value("id");
         $carrefour = DB::table("supermercados")->where("name","Carrefour")->value("id");
-        $eci = DB::table("supermercados")->where("name","El Corte Inglés")->value("id");
+        // $eci = DB::table("supermercados")->where("name","El Corte Inglés")->value("id");
         $dia = DB::table("supermercados")->where("name","Día")->value("id");
         $eroski = DB::table("supermercados")->where("name","Eroski")->value("id");
         $alcampo = DB::table("supermercados")->where("name","Alcampo")->value("id");
@@ -59,15 +59,15 @@ $p10101 = DB::table("productos")->where("name","Arroz largo")->value("id");
             "descripcion" => "Arroz largo categoria 1 Carrefour",
             "link" => "https://www.carrefour.es/supermercado/arroz-largo-categoria-1-carrefour-classc-1-kg/R-538408171/p"
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p10101,
-            "supermercado_id"=> $eci,
-            "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202208/30/00118005600343____3__600x600.jpg",
-            "peso" => 1000,
-            "scrab_id"=> "0110118005600343",
-            "descripcion" => "EL CORTE INGLES arroz largo extra",
-            "link" => "https://www.elcorteingles.es/supermercado/0110118005600343-el-corte-ingles-arroz-largo-extra-paquete-1-kg/"
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p10101,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202208/30/00118005600343____3__600x600.jpg",
+        //     "peso" => 1000,
+        //     "scrab_id"=> "0110118005600343",
+        //     "descripcion" => "EL CORTE INGLES arroz largo extra",
+        //     "link" => "https://www.elcorteingles.es/supermercado/0110118005600343-el-corte-ingles-arroz-largo-extra-paquete-1-kg/"
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p10101,
             "supermercado_id"=> $dia,
@@ -115,15 +115,15 @@ $p10102 = DB::table("productos")->where("name","Arroz redondo")->value("id");
             "descripcion" => "Arroz categoría primera Carrefour",
             "link" => "https://www.carrefour.es/supermercado/arroz-categoria-primera-carrefour-1-kg/R-prod1022743/p"
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p10102,
-            "supermercado_id"=> $eci,
-            "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202209/13/00118005700754____3__600x600.jpg",
-            "peso" => 1000,
-            "scrab_id"=> "0110118005700754",
-            "descripcion"=> "EL CORTE INGLES arroz redondo",
-            "link" => "https://www.elcorteingles.es/supermercado/0110118005700754-el-corte-ingles-arroz-redondo-paquete-1-kg/"
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p10102,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202209/13/00118005700754____3__600x600.jpg",
+        //     "peso" => 1000,
+        //     "scrab_id"=> "0110118005700754",
+        //     "descripcion"=> "EL CORTE INGLES arroz redondo",
+        //     "link" => "https://www.elcorteingles.es/supermercado/0110118005700754-el-corte-ingles-arroz-redondo-paquete-1-kg/"
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p10102,
             "supermercado_id"=> $dia,
@@ -171,15 +171,15 @@ $p10201 = DB::table("productos")->where("name","Panecillo menor 100 gr")->value(
             "descripcion" => "Baguetina Enharinada",
             "link" => "https://www.carrefour.es/supermercado/baguetina-enharinada-1-ud/R-fprod1210204/p"
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p10201,
-            "supermercado_id"=> $eci,
-            "img_url" => NULL,
-            "peso" => NULL,
-            "scrab_id"=> NULL,
-            "descripcion" => NULL,
-            "link" => NULL
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p10201,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => NULL,
+        //     "peso" => NULL,
+        //     "scrab_id"=> NULL,
+        //     "descripcion" => NULL,
+        //     "link" => NULL
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p10201,
             "supermercado_id"=> $dia,
@@ -227,15 +227,15 @@ $p10202 = DB::table("productos")->where("name","Panecillo integral menor 100 gr"
                 "descripcion" => NULL,
                 "link" => NULL
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10202,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10202,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10202,
                 "supermercado_id"=> $dia,
@@ -283,15 +283,15 @@ $p10203 = DB::table("productos")->where("name","Pan menor 250 gr")->value("id");
             "descripcion" => "Barra de pan pistola",
             "link" => "https://www.carrefour.es/supermercado/barra-de-pan-pistola-carrefour-250-g/R-527063193/p"
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p10203,
-            "supermercado_id"=> $eci,
-            "img_url" => NULL,
-            "peso" => NULL,
-            "scrab_id"=> NULL,
-            "descripcion" => NULL,
-            "link" => NULL
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p10203,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => NULL,
+        //     "peso" => NULL,
+        //     "scrab_id"=> NULL,
+        //     "descripcion" => NULL,
+        //     "link" => NULL
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p10203,
             "supermercado_id"=> $dia,
@@ -339,15 +339,15 @@ $p10204 = DB::table("productos")->where("name","Pan integral menor 250 gr")->val
                     "descripcion" => "Barra 100% integral",
                     "link" => "https://www.carrefour.es/supermercado/barra-100-integral-250-g/R-VC4AECOMM-550659/p"
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p10204,
-                    "supermercado_id"=> $eci,
-                    "img_url" => NULL,
-                    "peso" => NULL,
-                    "scrab_id"=> NULL,
-                    "descripcion" => NULL,
-                    "link" => NULL
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p10204,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => NULL,
+                //     "peso" => NULL,
+                //     "scrab_id"=> NULL,
+                //     "descripcion" => NULL,
+                //     "link" => NULL
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p10204,
                     "supermercado_id"=> $dia,
@@ -395,15 +395,15 @@ $p10205 = DB::table("productos")->where("name","Pan mayor 250 gr")->value("id");
                     "descripcion" => "Barra grande extra",
                     "link" => "https://www.carrefour.es/supermercado/barra-grande-extra-carrefour-1-ud/R-fprod1190377/p"
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p10205,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/28/00118574700177____7__600x600.jpg",
-                    "peso" => 340,
-                    "scrab_id"=> "0110118574700177",
-                    "descripcion" => "RUIPAN Pan especial torrijas",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118574700177-ruipan-pan-especial-torrijas-envase-340-g/"
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p10205,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/28/00118574700177____7__600x600.jpg",
+                //     "peso" => 340,
+                //     "scrab_id"=> "0110118574700177",
+                //     "descripcion" => "RUIPAN Pan especial torrijas",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118574700177-ruipan-pan-especial-torrijas-envase-340-g/"
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p10205,
                     "supermercado_id"=> $dia,
@@ -451,15 +451,15 @@ $p10206 = DB::table("productos")->where("name","Pan integral mayor 250 gr")->val
                         "descripcion" => "Pan de la abuela integral 100%",
                         "link" => "https://www.carrefour.es/supermercado/pan-de-la-abuela-integral-100/R-VC4AECOMM-550656/p"
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p10206,
-                        "supermercado_id"=> $eci,
-                        "img_url" => NULL,
-                        "peso" => NULL,
-                        "scrab_id"=> NULL,
-                        "descripcion" => NULL,
-                        "link" => NULL
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p10206,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => NULL,
+                    //     "peso" => NULL,
+                    //     "scrab_id"=> NULL,
+                    //     "descripcion" => NULL,
+                    //     "link" => NULL
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p10206,
                         "supermercado_id"=> $dia,
@@ -507,15 +507,15 @@ $p10207 = DB::table("productos")->where("name","Pan redondo")->value("id");
                 "descripcion" => "Pan de Pueblo sin aditivos",
                 "link" => "https://www.carrefour.es/supermercado/pan-de-pueblo-sin-aditivos-1-ud/R-VC4AECOMM-433734/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10207,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10207,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10207,
                 "supermercado_id"=> $dia,
@@ -563,15 +563,15 @@ $p10208 = DB::table("productos")->where("name","Pan para hamburguesa")->value("i
                 "descripcion" => "Pan de Hamburguesa Carrefour",
                 "link" => "https://www.carrefour.es/supermercado/pan-de-hamburguesa-carrefour-4-ud-300-g/R-575702273/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10208,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201604/22/00120653400554____2__600x600.jpg",
-                "peso" => 220,
-                "scrab_id"=> "0110120653400554",
-                "descripcion" => "Pan de hamburguesas classic con sésamo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120653400554-el-corte-ingles-pan-de-hamburguesas-classic-con-sesamo-4-unidades-bolsa-220-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10208,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201604/22/00120653400554____2__600x600.jpg",
+            //     "peso" => 220,
+            //     "scrab_id"=> "0110120653400554",
+            //     "descripcion" => "Pan de hamburguesas classic con sésamo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120653400554-el-corte-ingles-pan-de-hamburguesas-classic-con-sesamo-4-unidades-bolsa-220-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10208,
                 "supermercado_id"=> $dia,
@@ -619,15 +619,15 @@ $p10209 = DB::table("productos")->where("name","Pan de molde")->value("id");
                         "descripcion" => "Pan de molde con corteza",
                         "link" => "https://www.carrefour.es/supermercado/pan-de-molde-con-corteza-carrefour-820-g/R-VC4AECOMM-443145/p"
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p10209,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202001/15/00120654802287____2__1200x1200.jpg",
-                        "peso" => 820,
-                        "scrab_id"=> "0110120654802287",
-                        "descripcion" => "Pan de molde con corteza",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110120654802287-el-corte-ingles-pan-de-molde-con-corteza-original-26-rebanadas-bolsa-820-g/"
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p10209,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202001/15/00120654802287____2__1200x1200.jpg",
+                    //     "peso" => 820,
+                    //     "scrab_id"=> "0110120654802287",
+                    //     "descripcion" => "Pan de molde con corteza",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110120654802287-el-corte-ingles-pan-de-molde-con-corteza-original-26-rebanadas-bolsa-820-g/"
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p10209,
                         "supermercado_id"=> $dia,
@@ -675,15 +675,15 @@ $p10210 = DB::table("productos")->where("name","Pan para hot-dog")->value("id");
                 "descripcion" => "Pan de perrito",
                 "link" => "https://www.carrefour.es/supermercado/pan-de-perrito-6-ud-330-g/R-606509119/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10210,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202009/10/00120653400521____3__1200x1200.jpg",
-                "peso" => 330,
-                "scrab_id"=> "0110120653400521",
-                "descripcion" => "Panecillos para perritos",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120653400521-el-corte-ingles-panecillos-para-perritos-6-unidades-bolsa-330-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10210,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202009/10/00120653400521____3__1200x1200.jpg",
+            //     "peso" => 330,
+            //     "scrab_id"=> "0110120653400521",
+            //     "descripcion" => "Panecillos para perritos",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120653400521-el-corte-ingles-panecillos-para-perritos-6-unidades-bolsa-330-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10210,
                 "supermercado_id"=> $dia,
@@ -731,15 +731,15 @@ $p10211 = DB::table("productos")->where("name","Pan rallado")->value("id");
                 "descripcion" => "Pan rallado Carrefour",
                 "link" => "https://www.carrefour.es/supermercado/pan-rallado-carrefour-750-g/R-805763831/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10211,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202011/27/00120668500422____2__1200x1200.jpg",
-                "peso" => 750,
-                "scrab_id"=> "0110120668500422",
-                "descripcion" => "Pan rallado",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120668500422-el-corte-ingles-pan-rallado-bolsa-750-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10211,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202011/27/00120668500422____2__1200x1200.jpg",
+            //     "peso" => 750,
+            //     "scrab_id"=> "0110120668500422",
+            //     "descripcion" => "Pan rallado",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120668500422-el-corte-ingles-pan-rallado-bolsa-750-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10211,
                 "supermercado_id"=> $dia,
@@ -787,15 +787,15 @@ $p10301 = DB::table("productos")->where("name","Espirales 3 sabores")->value("id
                 "descripcion" => "Espirales vegetales",
                 "link" => "https://www.carrefour.es/supermercado/espirales-vegetales-carrefour-500-g/R-521005645/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10301,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/26/00118003600485____1__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118003600485",
-                "descripcion" => "Espirales con vegetales tricolor",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118003600485-romero-espirales-con-vegetales-tricolor-paquete-500-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10301,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/26/00118003600485____1__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118003600485",
+            //     "descripcion" => "Espirales con vegetales tricolor",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118003600485-romero-espirales-con-vegetales-tricolor-paquete-500-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10301,
                 "supermercado_id"=> $dia,
@@ -843,15 +843,15 @@ $p10302 = DB::table("productos")->where("name","Fideo cabellin")->value("id");
                 "descripcion" => "Fideo cabellin",
                 "link" => "https://www.carrefour.es/supermercado/fideo-cabellin-carrefour-500-g/R-544101818/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10302,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/20/00118003900851____2__600x600.jpg",
-                "peso" => 750,
-                "scrab_id"=> "0110118003900851",
-                "descripcion" => "Fideo cabellin",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118003900851-el-corte-ingles-fideo-cabellin-paquete-750-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10302,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/20/00118003900851____2__600x600.jpg",
+            //     "peso" => 750,
+            //     "scrab_id"=> "0110118003900851",
+            //     "descripcion" => "Fideo cabellin",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118003900851-el-corte-ingles-fideo-cabellin-paquete-750-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10302,
                 "supermercado_id"=> $dia,
@@ -899,15 +899,15 @@ $p10303 = DB::table("productos")->where("name","Fideo entrefino")->value("id");
                 "descripcion" => "Fideo entrefino",
                 "link" => "https://www.carrefour.es/supermercado/fideo-entrefino-carrefour-500-g/R-544101820/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10303,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/26/00118003900141____1__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118003900141",
-                "descripcion" => "Fideo cabello",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118003900141-romero-fideo-cabello-paquete-500-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10303,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/26/00118003900141____1__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118003900141",
+            //     "descripcion" => "Fideo cabello",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118003900141-romero-fideo-cabello-paquete-500-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10303,
                 "supermercado_id"=> $dia,
@@ -955,15 +955,15 @@ $p10304 = DB::table("productos")->where("name","Fideo grueso")->value("id");
                 "descripcion" => NULL,
                 "link" => NULL
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10304,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10304,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10304,
                 "supermercado_id"=> $dia,
@@ -1011,15 +1011,15 @@ $p10305 = DB::table("productos")->where("name","Macarron")->value("id");
                 "descripcion" => "Macarrones",
                 "link" => "https://www.carrefour.es/supermercado/macarrones-carrefour-1-kg/R-544501833/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10305,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/20/00118003503374____2__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118003503374",
-                "descripcion" => "Macarrones plumas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118003503374-el-corte-ingles-macarrones-plumas-paquete-1-kg/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10305,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/20/00118003503374____2__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118003503374",
+            //     "descripcion" => "Macarrones plumas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118003503374-el-corte-ingles-macarrones-plumas-paquete-1-kg/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10305,
                 "supermercado_id"=> $dia,
@@ -1067,15 +1067,15 @@ $p10306 = DB::table("productos")->where("name","Espaguetti")->value("id");
                 "descripcion" => "Pasta espaguetis Carrefour",
                 "link" => "https://www.carrefour.es/supermercado/pasta-espaguetis-carrefour-1-kg/R-544501835/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10306,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/20/00118003503366____2__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118003503366",
-                "descripcion" => "Espaguetis",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118003503366-el-corte-ingles-espaguetis-paquete-1-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10306,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/20/00118003503366____2__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118003503366",
+            //     "descripcion" => "Espaguetis",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118003503366-el-corte-ingles-espaguetis-paquete-1-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10306,
                 "supermercado_id"=> $dia,
@@ -1124,15 +1124,15 @@ $p10307 = DB::table("productos")->where("name","Tallarin")->value("id");
                 "descripcion" => "Tallarines",
                 "link" => "https://www.carrefour.es/supermercado/tallarines-carrefour-500-g/R-544101808/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10307,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10307,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10307,
                 "supermercado_id"=> $dia,
@@ -1180,15 +1180,15 @@ $p10401 = DB::table("productos")->where("name","Harina de trigo")->value("id");
                 "descripcion" => "Harina de trigo Classic",
                 "link" => "https://www.carrefour.es/supermercado/harina-de-trigo-classic-carrefour-1-kg/R-VC4AECOMM-253575/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10401,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202105/28/00118037901024____3__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118037901024",
-                "descripcion" => "Harina de trigo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118037901024-el-corte-ingles-harina-de-trigo-paquete-1-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10401,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202105/28/00118037901024____3__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118037901024",
+            //     "descripcion" => "Harina de trigo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118037901024-el-corte-ingles-harina-de-trigo-paquete-1-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10401,
                 "supermercado_id"=> $dia,
@@ -1236,15 +1236,15 @@ $p10402 = DB::table("productos")->where("name","Harina de maiz")->value("id");
                 "descripcion" => "Harina de maíz precocida Goya",
                 "link" => "https://www.carrefour.es/supermercado/harina-de-maiz-precocida-goya-sin-gluten-1-kg/R-prod1000012/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p10402,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/26/00118010200014____2__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118038300010",
-                "descripcion" => "Harina de maíz blanca precocida PAN",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118038300010-pan-harina-de-maiz-blanca-precocida-sin-gluten-paquete-1-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p10402,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/26/00118010200014____2__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118038300010",
+            //     "descripcion" => "Harina de maíz blanca precocida PAN",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118038300010-pan-harina-de-maiz-blanca-precocida-sin-gluten-paquete-1-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p10402,
                 "supermercado_id"=> $dia,
@@ -1292,15 +1292,15 @@ $p20101 = DB::table("productos")->where("name","Solomillo de ternera")->value("i
                 "descripcion" => "Medallón de solomillo de vacuno",
                 "link" => "https://www.carrefour.es/supermercado/medallon-de-solomillo-de-vacuno-500-g-aprox/R-prod63772/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20101,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202104/05/00118425000793____2__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118425000793",
-                "descripcion" => "Solomillo de ternera 4 unidades",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118425000793-solomillo-de-ternera-4-unidades-peso-aproximado-bandeja-500-g/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20101,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202104/05/00118425000793____2__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118425000793",
+            //     "descripcion" => "Solomillo de ternera 4 unidades",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118425000793-solomillo-de-ternera-4-unidades-peso-aproximado-bandeja-500-g/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20101,
                 "supermercado_id"=> $dia,
@@ -1357,15 +1357,15 @@ $p20102 = DB::table("productos")->where("name","Chuletón de ternera")->value("i
                     "descripcion" => "Chuletón de Vacuno",
                     "link" => "https://www.carrefour.es/supermercado/chuleton-de-anojo-calidad-y-origen-carrefour-1-kg-aprox/R-prod840189/p"
                     ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20102,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202306/20/00118425500982____9__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118425500982",
-                "descripcion" => "Chuletón de añojo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118425500982-chuleton-de-anojo/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20102,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202306/20/00118425500982____9__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118425500982",
+            //     "descripcion" => "Chuletón de añojo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118425500982-chuleton-de-anojo/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20102,
                 "supermercado_id"=> $dia,
@@ -1413,15 +1413,15 @@ $p20103 = DB::table("productos")->where("name","Entrecot de ternera")->value("id
                 "descripcion" => "Entrecot de añojo Calidad y Origen Carrefour",
                 "link" => "https://www.carrefour.es/supermercado/entrecot-lomo-de-anojo-calidad-y-origen-carrefour-500-g-aprox/R-prod840026/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20103,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/16/00118425500123____1__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118425500123",
-                "descripcion" => "Entrecot de lomo bajo de añojo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118425500123-entrecot-de-lomo-bajo-de-anojo/"
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20103,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/16/00118425500123____1__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118425500123",
+            //     "descripcion" => "Entrecot de lomo bajo de añojo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118425500123-entrecot-de-lomo-bajo-de-anojo/"
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20103,
                 "supermercado_id"=> $dia,
@@ -1469,15 +1469,15 @@ $p20104 = DB::table("productos")->where("name","Tacos para estofado")->value("id
                 "descripcion" => "Estofado de añojo ",
                 "link" => "https://www.carrefour.es/supermercado/estofado-de-anojo-calidad-y-origen-carrefour-500-g-aprox/R-prod840073/p"
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20104,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202104/05/00118425000819____2__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118425000819",
-                "descripcion" => "Carne magra troceada/ragout para guisar de ternera",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118425000819-carne-magra-troceadaragout-para-guisar-de-ternera-peso-aproximado-bandeja-500-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20104,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202104/05/00118425000819____2__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118425000819",
+            //     "descripcion" => "Carne magra troceada/ragout para guisar de ternera",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118425000819-carne-magra-troceadaragout-para-guisar-de-ternera-peso-aproximado-bandeja-500-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20104,
                 "supermercado_id"=> $dia,
@@ -1525,15 +1525,15 @@ $p20105 = DB::table("productos")->where("name","Filetes de ternera")->value("id"
                 "descripcion" => "Filetes de añojo",
                 "link" => "https://www.carrefour.es/supermercado/filetes-de-anojo-calidad-y-origen-carrefour-500-g-aprox/R-prod1070083/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20105,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202103/05/00118425501204____5__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118425501204",
-                "descripcion" => "Filetes de 1ª A de añojo para plancha",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118425501204-filetes-de-1-a-de-anojo-para-plancha-4-unidades-peso-aproximado-bandeja-500-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20105,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202103/05/00118425501204____5__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118425501204",
+            //     "descripcion" => "Filetes de 1ª A de añojo para plancha",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118425501204-filetes-de-1-a-de-anojo-para-plancha-4-unidades-peso-aproximado-bandeja-500-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20105,
                 "supermercado_id"=> $dia,
@@ -1581,15 +1581,15 @@ $p20201 = DB::table("productos")->where("name","Chuletas de lomo")->value("id");
                 "descripcion" => "Chuleta de Lomo de Cerdo",
                 "link" => "https://www.carrefour.es/supermercado/chuleta-de-lomo-de-cerdo-carrrefour-400-g-aprox/R-prod130307/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20201,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/22/00118434100287____1__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118434100287",
-                "descripcion" => "Chuleta de lomo extra de cerdo 50% Duroc",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118434100287-chuleta-de-lomo-extra-de-cerdo-50-duroc/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20201,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/22/00118434100287____1__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118434100287",
+            //     "descripcion" => "Chuleta de lomo extra de cerdo 50% Duroc",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118434100287-chuleta-de-lomo-extra-de-cerdo-50-duroc/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20201,
                 "supermercado_id"=> $dia,
@@ -1637,15 +1637,15 @@ $p20202 = DB::table("productos")->where("name","Pieza de lomo")->value("id");
                 "descripcion" => "Trozo de lomo de cerdo",
                 "link" => "https://www.carrefour.es/supermercado/trozo-de-lomo-de-cerdo-carrefour-12-kg-aprox/R-684403414/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20202,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202206/10/00118430509812____6__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118430509812",
-                "descripcion" => "Lomo fresco de cerdo La Montañera",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118430509812-la-montanera-lomo-fresco-de-cerdo-formato-ahorro-peso-aproximado-pieza-1-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20202,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202206/10/00118430509812____6__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118430509812",
+            //     "descripcion" => "Lomo fresco de cerdo La Montañera",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118430509812-la-montanera-lomo-fresco-de-cerdo-formato-ahorro-peso-aproximado-pieza-1-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20202,
                 "supermercado_id"=> $dia,
@@ -1693,15 +1693,15 @@ $p20203 = DB::table("productos")->where("name","Filetes cinta de lomo")->value("
                 "descripcion" => "Cinta de Lomo de Cerdo",
                 "link" => "https://www.carrefour.es/supermercado/cinta-de-lomo-de-cerdo-carrefour-500-g-aprox/R-VC4AECOMM-009725/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20203,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201703/15/00118434100030____3__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118434100030",
-                "descripcion" => "Lomo fresco extra de cerdo 50% Duroc",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118434100030-lomo-fresco-extra-de-cerdo-50-duroc/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20203,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201703/15/00118434100030____3__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118434100030",
+            //     "descripcion" => "Lomo fresco extra de cerdo 50% Duroc",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118434100030-lomo-fresco-extra-de-cerdo-50-duroc/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20203,
                 "supermercado_id"=> $dia,
@@ -1749,15 +1749,15 @@ $p20204 = DB::table("productos")->where("name","Solomillo de cerdo")->value("id"
                     "descripcion" => "Solomillo de cerdo",
                     "link" => "https://www.carrefour.es/supermercado/solomillo-de-cerdo-carrefour-12-kg-aprox/R-VC4AECOMM-518437/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20204,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/CONTENIDOS/201410/28/00118434100295____5__600x600.jpg",
-                    "peso" => 500,
-                    "scrab_id"=> "0110118434100295",
-                    "descripcion" => "https://sgfm.elcorteingles.es/SGFM/dctm/CONTENIDOS/201410/28/00118434100295____5__600x600.jpg",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118434100295-solomillo-fresco-de-cerdo-cruce-raza-duroc-peso-aproximado-500-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20204,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/CONTENIDOS/201410/28/00118434100295____5__600x600.jpg",
+                //     "peso" => 500,
+                //     "scrab_id"=> "0110118434100295",
+                //     "descripcion" => "https://sgfm.elcorteingles.es/SGFM/dctm/CONTENIDOS/201410/28/00118434100295____5__600x600.jpg",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118434100295-solomillo-fresco-de-cerdo-cruce-raza-duroc-peso-aproximado-500-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20204,
                     "supermercado_id"=> $dia,
@@ -1805,15 +1805,15 @@ $p20205 = DB::table("productos")->where("name","Costillas de cerdo")->value("id"
                 "descripcion" => "Costilla de Cerdo Semicarnuda",
                 "link" => "https://www.carrefour.es/supermercado/costilla-de-cerdo-semicarnuda-carrefour-700-g-aprox/R-VC4AECOMM-006822/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20205,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201604/28/00118434101129____2__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118434101129",
-                "descripcion" => "Costillas frescas carnudas de cerdo 50% Duroc",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118434101129-costillas-frescas-carnudas-de-cerdo-50-duroc/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20205,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201604/28/00118434101129____2__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118434101129",
+            //     "descripcion" => "Costillas frescas carnudas de cerdo 50% Duroc",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118434101129-costillas-frescas-carnudas-de-cerdo-50-duroc/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20205,
                 "supermercado_id"=> $dia,
@@ -1861,15 +1861,15 @@ $p20206 = DB::table("productos")->where("name","Filetes de jamon")->value("id");
                 "descripcion" => "Filete de jamón de cerdo",
                 "link" => "https://www.carrefour.es/supermercado/filete-de-jamon-de-cerdo-400-g-aprox/R-prod410728/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20206,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/22/00118434100261____1__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118434100261",
-                "descripcion" => "Jamón de cerdo 50% Duroc",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118434100261-jamon-de-cerdo-50-duroc/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20206,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/22/00118434100261____1__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118434100261",
+            //     "descripcion" => "Jamón de cerdo 50% Duroc",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118434100261-jamon-de-cerdo-50-duroc/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20206,
                 "supermercado_id"=> $dia,
@@ -1917,15 +1917,15 @@ $p20301 = DB::table("productos")->where("name","Chuletas de cordero")->value("id
             "descripcion" => "Chuletas de Cordero MAMA CORDERO",
             "link" => "https://www.carrefour.es/supermercado/chuletas-de-cordero-mama-cordero-045-kg-065-kg/R-VC4AECOMM-625984/p",
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p20301,
-            "supermercado_id"=> $eci,
-            "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/22/00118428100111____1__600x600.jpg",
-            "peso" => 1000,
-            "scrab_id"=> "0110118428100111",
-            "descripcion" => "Chuletas de cordero lechal",
-            "link" => "https://www.elcorteingles.es/supermercado/0110118428100111-chuletas-de-cordero-lechal/",
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p20301,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201410/22/00118428100111____1__600x600.jpg",
+        //     "peso" => 1000,
+        //     "scrab_id"=> "0110118428100111",
+        //     "descripcion" => "Chuletas de cordero lechal",
+        //     "link" => "https://www.elcorteingles.es/supermercado/0110118428100111-chuletas-de-cordero-lechal/",
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p20301,
             "supermercado_id"=> $dia,
@@ -1982,15 +1982,15 @@ $p20302 = DB::table("productos")->where("name","Paletilla de cordero")->value("i
                 "descripcion" => "Pierna de cordero lechal",
                 "link" => "https://www.carrefour.es/supermercado/paletilla-de-cordero-lechal-el-mercado-500-g-aprox/R-fprod1460309/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20302,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202311/13/00118486100029____10__1200x1200.jpg",
-                "peso" => 400,
-                "scrab_id"=> "0110118486100029",
-                "descripcion" => "Paletilla de cordero lechal",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118486100029-paletilla-de-cordero-lechal-envasada-al-vacio-pieza-400-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20302,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202311/13/00118486100029____10__1200x1200.jpg",
+            //     "peso" => 400,
+            //     "scrab_id"=> "0110118486100029",
+            //     "descripcion" => "Paletilla de cordero lechal",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118486100029-paletilla-de-cordero-lechal-envasada-al-vacio-pieza-400-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20302,
                 "supermercado_id"=> $dia,
@@ -2038,15 +2038,15 @@ $p20401 = DB::table("productos")->where("name","Traseros de pollo")->value("id")
                 "descripcion" => "Trasero de Pollo",
                 "link" => "https://www.carrefour.es/supermercado/trasero-de-pollo-carrefour-12-kg-aprox/R-827513085/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20401,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511522____4__1200x1200.jpg",
-                "peso" => 1100,
-                "scrab_id"=> "0110118460511522",
-                "descripcion" => "Traseros de pollo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511522-traseros-de-pollo-formato-ahorro-peso-aproximado-bandeja-11-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20401,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511522____4__1200x1200.jpg",
+            //     "peso" => 1100,
+            //     "scrab_id"=> "0110118460511522",
+            //     "descripcion" => "Traseros de pollo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511522-traseros-de-pollo-formato-ahorro-peso-aproximado-bandeja-11-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20401,
                 "supermercado_id"=> $dia,
@@ -2094,15 +2094,15 @@ $p20402 = DB::table("productos")->where("name","Muslo y contramuslo")->value("id
                 "descripcion" => NULL,
                 "link" => NULL,
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20402,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511449____4__1200x1200.jpg",
-                "peso" => 750,
-                "scrab_id"=> "0110118460511449",
-                "descripcion" => "Contramuslos de pollo sin piel",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511449-contramuslos-de-pollo-sin-piel-peso-aproximado-bandeja-750-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20402,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511449____4__1200x1200.jpg",
+            //     "peso" => 750,
+            //     "scrab_id"=> "0110118460511449",
+            //     "descripcion" => "Contramuslos de pollo sin piel",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511449-contramuslos-de-pollo-sin-piel-peso-aproximado-bandeja-750-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20402,
                 "supermercado_id"=> $dia,
@@ -2150,15 +2150,15 @@ $p20403 = DB::table("productos")->where("name","Muslitos de pollo")->value("id")
                 "descripcion" => "Jamoncitos de pollo",
                 "link" => "https://www.carrefour.es/supermercado/jamoncitos-de-pollo-carrefour-1-kg-aprox/R-830700192/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20403,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511415____4__600x600.jpg",
-                "peso" => 750,
-                "scrab_id"=> "0110118460511415",
-                "descripcion" => "Jamoncitos de pollo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511415-jamoncitos-de-pollo-peso-aproximado-bandeja-750-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20403,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511415____4__600x600.jpg",
+            //     "peso" => 750,
+            //     "scrab_id"=> "0110118460511415",
+            //     "descripcion" => "Jamoncitos de pollo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511415-jamoncitos-de-pollo-peso-aproximado-bandeja-750-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20403,
                 "supermercado_id"=> $dia,
@@ -2206,15 +2206,15 @@ $p20404 = DB::table("productos")->where("name","Pechuga fileteada de pollo")->va
                 "descripcion" => "Pechuga de pollo certificado en filetes",
                 "link" => "https://www.carrefour.es/supermercado/pechuga-de-pollo-certificado-en-filetes-carrefour-500-g-aprox/R-791562919/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20404,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511373____4__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118460511373",
-                "descripcion" => "Filetes de pechuga de pollo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511373-filetes-de-pechuga-de-pollo-peso-aproximado-bandeja-500-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20404,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511373____4__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118460511373",
+            //     "descripcion" => "Filetes de pechuga de pollo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511373-filetes-de-pechuga-de-pollo-peso-aproximado-bandeja-500-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20404,
                 "supermercado_id"=> $dia,
@@ -2262,15 +2262,15 @@ $p20405 = DB::table("productos")->where("name","Alitas de pollo")->value("id");
                 "descripcion" => "Alitas partidas de pollo",
                 "link" => "https://www.carrefour.es/supermercado/alas-partidas-de-pollo-carrefour-el-mercado-500-g-aprox/R-525964728/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20405,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511480____4__1200x1200.jpg",
-                "peso" => 600,
-                "scrab_id"=> "0110118460511480",
-                "descripcion" => "Alitas partidas de pollo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511480-alas-partidas-de-pollo-peso-aproximado-bandeja-600-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20405,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511480____4__1200x1200.jpg",
+            //     "peso" => 600,
+            //     "scrab_id"=> "0110118460511480",
+            //     "descripcion" => "Alitas partidas de pollo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511480-alas-partidas-de-pollo-peso-aproximado-bandeja-600-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20405,
                 "supermercado_id"=> $dia,
@@ -2318,15 +2318,15 @@ $p20406 = DB::table("productos")->where("name","Pechuga entera de pollo")->value
                 "descripcion" => "Pechuga de pollo",
                 "link" => "https://www.carrefour.es/supermercado/pechuga-de-pollo-carrefour-12-kg-aprox/R-827513087/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20406,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511365____4__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118460511365",
-                "descripcion" => "Pechuga de pollo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511365-pechuga-de-pollo-formato-ahorro-peso-aproximado-bandeja-1-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20406,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202309/14/00118460511365____4__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118460511365",
+            //     "descripcion" => "Pechuga de pollo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511365-pechuga-de-pollo-formato-ahorro-peso-aproximado-bandeja-1-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20406,
                 "supermercado_id"=> $dia,
@@ -2374,15 +2374,15 @@ $p20407 = DB::table("productos")->where("name","Pollo entero limpio")->value("id
                 "descripcion" => "Pollo certificado limpio",
                 "link" => "https://www.carrefour.es/supermercado/pollo-certificado-limpio-carrefour-2-kg/R-791562917/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20407,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202302/28/00118460511332____2__1200x1200.jpg",
-                "peso" => 1700,
-                "scrab_id"=> "0110118460511332",
-                "descripcion" => "Pollo entero limpio",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118460511332-pollo-entero-limpio-para-asar-peso-aproximado-bandeja-17-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20407,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202302/28/00118460511332____2__1200x1200.jpg",
+            //     "peso" => 1700,
+            //     "scrab_id"=> "0110118460511332",
+            //     "descripcion" => "Pollo entero limpio",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118460511332-pollo-entero-limpio-para-asar-peso-aproximado-bandeja-17-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20407,
                 "supermercado_id"=> $dia,
@@ -2430,15 +2430,15 @@ $p20408 = DB::table("productos")->where("name","Chuletas de pavo")->value("id");
                 "descripcion" => "Chuletas de pavo",
                 "link" => "https://www.carrefour.es/supermercado/chuleta-de-pavo-carrefour-500-g-aprox/R-prod920185/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20408,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL,
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20408,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL,
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20408,
                 "supermercado_id"=> $dia,
@@ -2486,15 +2486,15 @@ $p20409 = DB::table("productos")->where("name","Pechuga fileteada de pavo")->val
                 "descripcion" => "Pechuga de pavo fileteada",
                 "link" => "https://www.carrefour.es/supermercado/pechuga-de-pavo-fileteada-carrefour-600-g-aprox/R-prod920182/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20409,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/20/00118461002315____6__1200x1200.jpg",
-                "peso" => 600,
-                "scrab_id"=> "0110118461002315",
-                "descripcion" => "Filetes de pechuga de pavo frescos",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118461002315-el-corte-ingles-filetes-de-pechuga-de-pavo-frescos-peso-aproximado-bandeja-600-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20409,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/20/00118461002315____6__1200x1200.jpg",
+            //     "peso" => 600,
+            //     "scrab_id"=> "0110118461002315",
+            //     "descripcion" => "Filetes de pechuga de pavo frescos",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118461002315-el-corte-ingles-filetes-de-pechuga-de-pavo-frescos-peso-aproximado-bandeja-600-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20409,
                 "supermercado_id"=> $dia,
@@ -2544,15 +2544,15 @@ $p20501 = DB::table("productos")->where("name","Chopped de pavo")->value("id");
             "descripcion" => "Chopped de Pavo en lonchas",
             "link" => "https://www.carrefour.es/supermercado/chopped-de-pavo-en-lonchas-carrefour-el-mercado-sin-gluten-250-g/R-VC4AECOMM-710860/p",
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p20501,
-            "supermercado_id"=> $eci,
-            "img_url" => NULL,
-            "peso" => NULL,
-            "scrab_id"=> NULL,
-            "descripcion" => NULL,
-            "link" => NULL,
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p20501,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => NULL,
+        //     "peso" => NULL,
+        //     "scrab_id"=> NULL,
+        //     "descripcion" => NULL,
+        //     "link" => NULL,
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p20501,
             "supermercado_id"=> $dia,
@@ -2600,15 +2600,15 @@ $p20502 = DB::table("productos")->where("name","Chopped pork")->value("id");
             "descripcion" => "Chopped en lonchas Carrefour",
             "link" => "https://www.carrefour.es/supermercado/chopped-en-lonchas-carrefour-el-mercado-sin-gluten-250-g/R-VC4AECOMM-710772/p",
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p20502,
-            "supermercado_id"=> $eci,
-            "img_url" => NULL,
-            "peso" => NULL,
-            "scrab_id"=> NULL,
-            "descripcion" => NULL,
-            "link" => NULL,
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p20502,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => NULL,
+        //     "peso" => NULL,
+        //     "scrab_id"=> NULL,
+        //     "descripcion" => NULL,
+        //     "link" => NULL,
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p20502,
             "supermercado_id"=> $dia,
@@ -2699,15 +2699,15 @@ $p20504 = DB::table("productos")->where("name","Mortadela de cerdo")->value("id"
             "descripcion" => "Mortadela en lonchas Carrefour",
             "link" => "https://www.carrefour.es/supermercado/mortadela-en-lonchas-carrefour-el-mercado-sin-gluten-250-g/R-VC4AECOMM-710701/p",
             ]);
-        DB::table("supermercadoproductos")->insert([
-            "producto_id"=> $p20504,
-            "supermercado_id"=> $eci,
-            "img_url" => NULL,
-            "peso" => NULL,
-            "scrab_id"=> NULL,
-            "descripcion" => NULL,
-            "link" => NULL,
-            ]);
+        // DB::table("supermercadoproductos")->insert([
+        //     "producto_id"=> $p20504,
+        //     "supermercado_id"=> $eci,
+        //     "img_url" => NULL,
+        //     "peso" => NULL,
+        //     "scrab_id"=> NULL,
+        //     "descripcion" => NULL,
+        //     "link" => NULL,
+        //     ]);
         DB::table("supermercadoproductos")->insert([
             "producto_id"=> $p20504,
             "supermercado_id"=> $dia,
@@ -2755,15 +2755,15 @@ $p20505 = DB::table("productos")->where("name","Mortadela de pavo")->value("id")
                 "descripcion" => "Mortadela de pavo en lonchas sin gluten",
                 "link" => "https://www.carrefour.es/supermercado/mortadela-de-pavo-en-lonchas-carrefour-sin-gluten-250-g/R-VC4AECOMM-710777/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20505,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL,
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20505,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL,
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20505,
                 "supermercado_id"=> $dia,
@@ -2811,15 +2811,15 @@ $p20506 = DB::table("productos")->where("name","Chorizo 'Pamplona'")->value("id"
                 "descripcion" => "Chorizo de Pamplona en lonchas",
                 "link" => "https://www.carrefour.es/supermercado/chorizo-de-pamplona-en-lonchas-carrefour-el-mercado-2x1125-g/R-VC4AECOMM-084413/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20506,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/04/00118386700621____6__1200x1200.jpg",
-                "peso" => 225,
-                "scrab_id"=> "0110118386700621",
-                "descripcion" => "Chorizo de Pamplona extra en lonchas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118386700621-el-corte-ingles-chorizo-de-pamplona-extra-en-lonchas-sin-gluten-pack-2-x-1125-g-envase-225-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20506,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/04/00118386700621____6__1200x1200.jpg",
+            //     "peso" => 225,
+            //     "scrab_id"=> "0110118386700621",
+            //     "descripcion" => "Chorizo de Pamplona extra en lonchas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118386700621-el-corte-ingles-chorizo-de-pamplona-extra-en-lonchas-sin-gluten-pack-2-x-1125-g-envase-225-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20506,
                 "supermercado_id"=> $dia,
@@ -2867,15 +2867,15 @@ $p20507 = DB::table("productos")->where("name","Salami extra")->value("id");
                 "descripcion" => "Salama extra El Mercado",
                 "link" => "https://www.carrefour.es/supermercado/salami-extra-carrefour-el-mercado-pack-de-2-unidades-de-120-g-g/R-VC4AECOMM-248782/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p20507,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/04/00118388300727____2__600x600.jpg",
-                "peso" => 225,
-                "scrab_id"=> "0110118388300727",
-                "img_url" => "Salama extra en lonchas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118388300727-el-corte-ingles-salami-extra-en-lonchas-sin-gluten-pack-2-x-1125-g-envase-225-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p20507,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/04/00118388300727____2__600x600.jpg",
+            //     "peso" => 225,
+            //     "scrab_id"=> "0110118388300727",
+            //     "img_url" => "Salama extra en lonchas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118388300727-el-corte-ingles-salami-extra-en-lonchas-sin-gluten-pack-2-x-1125-g-envase-225-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p20507,
                 "supermercado_id"=> $dia,
@@ -2923,15 +2923,15 @@ $p20508 = DB::table("productos")->where("name","Salchichón extra")->value("id")
                     "descripcion" => "Salchichon extra El Mercado",
                     "link" => "https://www.carrefour.es/supermercado/salchichon-extra-carrefour-el-mercado-pack-de-2-unidades-de-120-g/R-VC4AECOMM-248781/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20508,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/08/00118388300529____10__1200x1200.jpg",
-                    "peso" => 150,
-                    "scrab_id"=> "0110118388300529",
-                    "descripcion" => "Salchichon extra en lonchas sin gluten",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118388300529-el-corte-ingles-selection-salchichon-extra-en-lonchas-sin-gluten-envase-150-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20508,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/08/00118388300529____10__1200x1200.jpg",
+                //     "peso" => 150,
+                //     "scrab_id"=> "0110118388300529",
+                //     "descripcion" => "Salchichon extra en lonchas sin gluten",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118388300529-el-corte-ingles-selection-salchichon-extra-en-lonchas-sin-gluten-envase-150-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20508,
                     "supermercado_id"=> $dia,
@@ -2979,15 +2979,15 @@ $p20509 = DB::table("productos")->where("name","Lomo embuchado")->value("id");
                     "descripcion" => "Lomo embuchado lonchas",
                     "link" => "https://www.carrefour.es/supermercado/lomo-embuchado-en-lonchas-carrefour-sin-gluten-pack-de-4-unidades-de-3125-g/R-VC4AECOMM-709767/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20509,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/04/00118387200324____2__600x600.jpg",
-                    "peso" => 225,
-                    "scrab_id"=> "0110118387200324",
-                    "descripcion" => "Lomo embuchado en lonchas",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118387200324-el-corte-ingles-lomo-embuchado-en-lonchas-sin-gluten-sin-lactosa-pack-2-x-1125-g-envase-225-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20509,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/04/00118387200324____2__600x600.jpg",
+                //     "peso" => 225,
+                //     "scrab_id"=> "0110118387200324",
+                //     "descripcion" => "Lomo embuchado en lonchas",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118387200324-el-corte-ingles-lomo-embuchado-en-lonchas-sin-gluten-sin-lactosa-pack-2-x-1125-g-envase-225-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20509,
                     "supermercado_id"=> $dia,
@@ -3035,15 +3035,15 @@ $p20510 = DB::table("productos")->where("name","Bacon")->value("id");
                     "descripcion" => "Bacon en lonchas El Mercado",
                     "link" => "https://www.carrefour.es/supermercado/bacon-en-lonchas-carrefour-el-mercado-sin-gluten-200-g/R-VC4AECOMM-710687/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20510,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202402/06/00118384500031____7__600x600.jpg",
-                    "peso" => 150,
-                    "scrab_id"=> "0110118384500031",
-                    "descripcion" => "Bacon cocido y ahumado en lonchas",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118384500031-el-corte-ingles-selection-bacon-cocido-y-ahumado-en-lonchas-sin-gluten-envase-150-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20510,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202402/06/00118384500031____7__600x600.jpg",
+                //     "peso" => 150,
+                //     "scrab_id"=> "0110118384500031",
+                //     "descripcion" => "Bacon cocido y ahumado en lonchas",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118384500031-el-corte-ingles-selection-bacon-cocido-y-ahumado-en-lonchas-sin-gluten-envase-150-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20510,
                     "supermercado_id"=> $dia,
@@ -3100,15 +3100,15 @@ $p20601 = DB::table("productos")->where("name","Tacos carne adobada 'Pinchos'")-
                     "descripcion" => "Pincho moruno de cerdo amarillo",
                     "link" => "https://www.carrefour.es/supermercado/pincho-moruno-de-cerdo-adobado-carrefour-el-mercado-340-g/R-VC4AECOMM-058426/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20601,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201803/27/00118433500149____2__600x600.jpg",
-                    "peso" => 300,
-                    "scrab_id"=> "0110118433500149",
-                    "descripcion" => "Pincho moruno andaluz de cerdo",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118433500149-pelayito-pincho-moruno-andaluz-de-cerdo-sin-gluten-4-unidades-peso-aproximado-bandeja-300-g/"
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20601,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201803/27/00118433500149____2__600x600.jpg",
+                //     "peso" => 300,
+                //     "scrab_id"=> "0110118433500149",
+                //     "descripcion" => "Pincho moruno andaluz de cerdo",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118433500149-pelayito-pincho-moruno-andaluz-de-cerdo-sin-gluten-4-unidades-peso-aproximado-bandeja-300-g/"
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20601,
                     "supermercado_id"=> $dia,
@@ -3156,15 +3156,15 @@ $p20602 = DB::table("productos")->where("name","Longaniza de cerdo")->value("id"
                     "descripcion" => "Longaniza blanca El Mercado",
                     "link" => "https://www.carrefour.es/supermercado/longaniza-blanca-carrefour-el-mercado-500-g-aprox/R-VC4AECOMM-058970/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20602,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202005/29/00118450500881____4__1200x1200.jpg",
-                    "peso" => 350,
-                    "scrab_id"=> "0110118450500881",
-                    "descripcion" => "Longaniza de cerdo blanca fresca",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118450500881-gurmesa-longaniza-de-cerdo-fresca-blanca-sin-gluten-peso-aproximado-bandeja-350-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20602,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202005/29/00118450500881____4__1200x1200.jpg",
+                //     "peso" => 350,
+                //     "scrab_id"=> "0110118450500881",
+                //     "descripcion" => "Longaniza de cerdo blanca fresca",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118450500881-gurmesa-longaniza-de-cerdo-fresca-blanca-sin-gluten-peso-aproximado-bandeja-350-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20602,
                     "supermercado_id"=> $dia,
@@ -3212,15 +3212,15 @@ $p20603 = DB::table("productos")->where("name","Carne picada de cerdo")->value("
                     "descripcion" => "Pareparado de carne picada de cerdo",
                     "link" => "https://www.carrefour.es/supermercado/preparado-de-carne-picada-de-cerdo-carrefour-el-mercado-500-g/R-VC4AECOMM-050334/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20603,
-                    "supermercado_id"=> $eci,
-                    "img_url" => NULL,
-                    "peso" => NULL,
-                    "scrab_id"=> NULL,
-                    "descripcion" => NULL,
-                    "link" => NULL,
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20603,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => NULL,
+                //     "peso" => NULL,
+                //     "scrab_id"=> NULL,
+                //     "descripcion" => NULL,
+                //     "link" => NULL,
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20603,
                     "supermercado_id"=> $dia,
@@ -3268,15 +3268,15 @@ $p20604 = DB::table("productos")->where("name","Carne picada de ternera")->value
                     "descripcion" => "Preparado de carne picada de vacuno",
                     "link" => "https://www.carrefour.es/supermercado/preparado-de-carne-picada-de-vacuno-carrefour-500-g/R-VC4AECOMM-050315/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p20604,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201604/07/00118480200130____1__600x600.jpg",
-                    "peso" => 400,
-                    "scrab_id"=> "0110118480200130",
-                    "descripcion" => "Preparado de carne picada de añojo",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118480200130-incova-preparado-de-carne-picada-de-anojo-bandeja-400-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p20604,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201604/07/00118480200130____1__600x600.jpg",
+                //     "peso" => 400,
+                //     "scrab_id"=> "0110118480200130",
+                //     "descripcion" => "Preparado de carne picada de añojo",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118480200130-incova-preparado-de-carne-picada-de-anojo-bandeja-400-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p20604,
                     "supermercado_id"=> $dia,
@@ -3379,15 +3379,15 @@ $p30102 = DB::table("productos")->where("name","Bacalao")->value("id");
                 "descripcion" => "Bacalao Skrei Circulo de Calidad",
                 "link" => "https://www.carrefour.es/supermercado/bacalao-skrei-3-kg-aprox/R-693806541/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30102,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118247400205____5__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118247400205",
-                "descripcion" => "Bacalao noruego de cultivo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118247400205-bacalao-noruego-de-cultivo-peso-aproximado-pieza-1-3-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30102,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118247400205____5__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118247400205",
+            //     "descripcion" => "Bacalao noruego de cultivo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118247400205-bacalao-noruego-de-cultivo-peso-aproximado-pieza-1-3-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30102,
                 "supermercado_id"=> $dia,
@@ -3435,15 +3435,15 @@ $p30103 = DB::table("productos")->where("name","Boquerón")->value("id");
                     "descripcion" => NULL,
                     "link" => NULL,
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p30103,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118246300042____2__1200x1200.jpg",
-                    "peso" => 1000,
-                    "scrab_id"=> "0110118246300042",
-                    "descripcion" => "Boquerones",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118246300042-boquerones/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p30103,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118246300042____2__1200x1200.jpg",
+                //     "peso" => 1000,
+                //     "scrab_id"=> "0110118246300042",
+                //     "descripcion" => "Boquerones",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118246300042-boquerones/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p30103,
                     "supermercado_id"=> $dia,
@@ -3491,15 +3491,15 @@ $p30104 = DB::table("productos")->where("name","Rape")->value("id");
                 "descripcion" => "Rape blanco",
                 "link" => "https://www.carrefour.es/supermercado/rape-blanco-25-kg-aprox/R-530807348/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30104,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118255800031____2__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118255800031",
-                "descripcion" => "Rape blanco entero",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118255800031-rape-blanco-entero-peso-aproximado-pieza-1-2-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30104,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118255800031____2__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118255800031",
+            //     "descripcion" => "Rape blanco entero",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118255800031-rape-blanco-entero-peso-aproximado-pieza-1-2-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30104,
                 "supermercado_id"=> $dia,
@@ -3547,15 +3547,15 @@ $p30105 = DB::table("productos")->where("name","Gallo")->value("id");
                 "descripcion" => "Gallo",
                 "link" => "https://www.carrefour.es/supermercado/gallo-1-kg-aprox/R-628108246/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30105,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/19/00118255400022____2__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118255400022",
-                "descripcion" => "Gallo de ración",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118255400022-gallo-de-racion-peso-aproximado-pieza-100-200-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30105,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/19/00118255400022____2__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118255400022",
+            //     "descripcion" => "Gallo de ración",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118255400022-gallo-de-racion-peso-aproximado-pieza-100-200-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30105,
                 "supermercado_id"=> $dia,
@@ -3603,15 +3603,15 @@ $p30106 = DB::table("productos")->where("name","Lenguado")->value("id");
                 "descripcion" => "Lenguado",
                 "link" => "https://www.carrefour.es/supermercado/lenguado-140-g-aprox/R-530807372/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30106,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/14/00118255500128____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118255500128",
-                "descripcion" => "Lenguado de ración pequeño",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118255500128-lenguado-de-racion-pequeno-peso-aproximado-pieza-100-150-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30106,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/14/00118255500128____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118255500128",
+            //     "descripcion" => "Lenguado de ración pequeño",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118255500128-lenguado-de-racion-pequeno-peso-aproximado-pieza-100-150-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30106,
                 "supermercado_id"=> $dia,
@@ -3659,15 +3659,15 @@ $p30107 = DB::table("productos")->where("name","Lubina")->value("id");
                 "descripcion" => "Lubina",
                 "link" => "https://www.carrefour.es/supermercado/lubina-600-g-aprox/R-790212148/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30107,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118247300041____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118247300041",
-                "descripcion" => "Lubina nacional",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118247300041-lubina-nacional-peso-pieza-400-600-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30107,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118247300041____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118247300041",
+            //     "descripcion" => "Lubina nacional",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118247300041-lubina-nacional-peso-pieza-400-600-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30107,
                 "supermercado_id"=> $dia,
@@ -3716,15 +3716,15 @@ $p30108 = DB::table("productos")->where("name","Merluza")->value("id");
                 "descripcion" => "Merluza",
                 "link" => "https://www.carrefour.es/supermercado/merluza-3-kg-aprox/R-628108209/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30108,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202002/06/00118246800066____4__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118246800066",
-                "descripcion" => "Merluza, media o entera",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118246800066-merluza-por-medias-o-enteras-peso-aproximado-pieza-3-4-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30108,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202002/06/00118246800066____4__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118246800066",
+            //     "descripcion" => "Merluza, media o entera",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118246800066-merluza-por-medias-o-enteras-peso-aproximado-pieza-3-4-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30108,
                 "supermercado_id"=> $dia,
@@ -3772,15 +3772,15 @@ $p30109 = DB::table("productos")->where("name","Pescadilla")->value("id");
                 "descripcion" => "Pescadilla fina",
                 "link" => "https://www.carrefour.es/supermercado/pescadilla-fina-800-g-aprox/R-531505553/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30109,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118246800090____2__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118246800090",
-                "descripcion" => "Pescadilla",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118246800090-pescadilla-peso-pieza-1-2-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30109,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118246800090____2__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118246800090",
+            //     "descripcion" => "Pescadilla",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118246800090-pescadilla-peso-pieza-1-2-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30109,
                 "supermercado_id"=> $dia,
@@ -3828,15 +3828,15 @@ $p30110 = DB::table("productos")->where("name","Salmón")->value("id");
                 "descripcion" => "Salmón entero",
                 "link" => "https://www.carrefour.es/supermercado/salmon-3-kg-aprox/R-531731258/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30110,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118247400049____4__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118247400049",
-                "descripcion" => "Salmón noruego por medios o entero",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118247400049-salmon-noruego-por-medios-o-entero-peso-aproximado-pieza-2-3-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30110,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118247400049____4__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118247400049",
+            //     "descripcion" => "Salmón noruego por medios o entero",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118247400049-salmon-noruego-por-medios-o-entero-peso-aproximado-pieza-2-3-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30110,
                 "supermercado_id"=> $dia,
@@ -3884,15 +3884,15 @@ $p30111 = DB::table("productos")->where("name","Sardinas")->value("id");
                 "descripcion" => "Sardinas",
                 "link" => "https://www.carrefour.es/supermercado/sardinas-1-kg-aprox/R-540001614/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30111,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118251000149____2__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118251000149",
-                "descripcion" => "Filetes de sardinas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118251000149-filete-de-sardinas/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30111,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118251000149____2__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118251000149",
+            //     "descripcion" => "Filetes de sardinas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118251000149-filete-de-sardinas/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30111,
                 "supermercado_id"=> $dia,
@@ -3940,15 +3940,15 @@ $p30112 = DB::table("productos")->where("name","Trucha")->value("id");
                     "descripcion" => "Trucha asalmonada",
                     "link" => "https://www.carrefour.es/supermercado/trucha-asalmonada-circulo-de-calidad-600-g-aprox/R-fprod1370189/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p30112,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/19/00118247400056____2__1200x1200.jpg",
-                    "peso" => 1000,
-                    "scrab_id"=> "0110118247400056",
-                    "descripcion" => "Trucha asalmonada entera",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118247400056-trucha-asalmonada-entera-peso-aproximado-pieza-300-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p30112,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/19/00118247400056____2__1200x1200.jpg",
+                //     "peso" => 1000,
+                //     "scrab_id"=> "0110118247400056",
+                //     "descripcion" => "Trucha asalmonada entera",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118247400056-trucha-asalmonada-entera-peso-aproximado-pieza-300-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p30112,
                     "supermercado_id"=> $dia,
@@ -3996,15 +3996,15 @@ $p30113 = DB::table("productos")->where("name","Dorada")->value("id");
                     "descripcion" => "Dorada de ración",
                     "link" => "https://www.carrefour.es/supermercado/dorada-de-racion-carrefour-600-g-aprox/R-628108203/p",
                     ]);
-                DB::table("supermercadoproductos")->insert([
-                    "producto_id"=> $p30113,
-                    "supermercado_id"=> $eci,
-                    "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/27/00118247300017____6__1200x1200.jpg",
-                    "peso" => 1000,
-                    "scrab_id"=> "0110118247300017",
-                    "descripcion" => "Dorada nacional",
-                    "link" => "https://www.elcorteingles.es/supermercado/0110118247300017-dorada-nacional-peso-pieza-400-600-g/",
-                    ]);
+                // DB::table("supermercadoproductos")->insert([
+                //     "producto_id"=> $p30113,
+                //     "supermercado_id"=> $eci,
+                //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/27/00118247300017____6__1200x1200.jpg",
+                //     "peso" => 1000,
+                //     "scrab_id"=> "0110118247300017",
+                //     "descripcion" => "Dorada nacional",
+                //     "link" => "https://www.elcorteingles.es/supermercado/0110118247300017-dorada-nacional-peso-pieza-400-600-g/",
+                //     ]);
                 DB::table("supermercadoproductos")->insert([
                     "producto_id"=> $p30113,
                     "supermercado_id"=> $dia,
@@ -4052,15 +4052,15 @@ $p30201 = DB::table("productos")->where("name","Atún en rodajas")->value("id");
                 "descripcion" => "Filetes de atún de aleta amarilla congelado",
                 "link" => "https://www.carrefour.es/supermercado/filetes-de-atun-de-aleta-amarilla-congelado-extra-carrefour-225-g/R-VC4AECOMM-457034/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30201,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/10/00118910501073____3__1200x1200.jpg",
-                "peso" => 225,
-                "scrab_id"=> "0110118910501073",
-                "descripcion" => "Filetes de atún solomillos sin piel CAMPOS",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118910501073-campos-filetes-de-atun-solomillos-sin-piel-estuche-225-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30201,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/10/00118910501073____3__1200x1200.jpg",
+            //     "peso" => 225,
+            //     "scrab_id"=> "0110118910501073",
+            //     "descripcion" => "Filetes de atún solomillos sin piel CAMPOS",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118910501073-campos-filetes-de-atun-solomillos-sin-piel-estuche-225-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30201,
                 "supermercado_id"=> $dia,
@@ -4108,15 +4108,15 @@ $p30202 = DB::table("productos")->where("name","Lomos de bacalao")->value("id");
                 "descripcion" => "Lomos de bacalao congelado",
                 "link" => "https://www.carrefour.es/supermercado/lomos-de-bacalao-congelado-500-g-aprox/R-VC4AECOMM-451223/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30202,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201711/21/00118910501529____7__600x600.jpg",
-                "peso" => 400,
-                "scrab_id"=> "0110118910501529",
-                "descripcion" => "Filetes de bacalao al punto de sal",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118910501529-el-corte-ingles-filetes-de-bacalao-al-punto-de-sal-bandeja-400-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30202,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201711/21/00118910501529____7__600x600.jpg",
+            //     "peso" => 400,
+            //     "scrab_id"=> "0110118910501529",
+            //     "descripcion" => "Filetes de bacalao al punto de sal",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118910501529-el-corte-ingles-filetes-de-bacalao-al-punto-de-sal-bandeja-400-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30202,
                 "supermercado_id"=> $dia,
@@ -4164,15 +4164,15 @@ $p30203 = DB::table("productos")->where("name","Merluza fileteada")->value("id")
                 "descripcion" => "Filete de merluza Argentina congelada",
                 "link" => "https://www.carrefour.es/supermercado/filete-de-merluza-argentina-congelada-carrefour-1-kg/R-823818281/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30203,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202311/28/00118937000661____4__600x600.jpg",
-                "peso" => 580,
-                "scrab_id"=> "0110118937000661",
-                "descripcion" => "Filetes de merluza del Cabo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118937000661-el-corte-ingles-filetes-de-merluza-del-cabo-sin-piel-bolsa-580-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30203,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202311/28/00118937000661____4__600x600.jpg",
+            //     "peso" => 580,
+            //     "scrab_id"=> "0110118937000661",
+            //     "descripcion" => "Filetes de merluza del Cabo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118937000661-el-corte-ingles-filetes-de-merluza-del-cabo-sin-piel-bolsa-580-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30203,
                 "supermercado_id"=> $dia,
@@ -4220,15 +4220,15 @@ $p30204 = DB::table("productos")->where("name","Cola de rape")->value("id");
                 "descripcion" => "Cola de rape chino ",
                 "link" => "https://www.carrefour.es/supermercado/cola-de-rape-chino-congelado-800-g/R-fprod1320155/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30204,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202106/08/00118910502022____2__1200x1200.jpg",
-                "peso" => 480,
-                "scrab_id"=> "0110118910502022",
-                "descripcion" => "Cola de rape crudo DELFIN",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118910502022-delfin-cola-de-rape-crudo-pieza-400-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30204,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202106/08/00118910502022____2__1200x1200.jpg",
+            //     "peso" => 480,
+            //     "scrab_id"=> "0110118910502022",
+            //     "descripcion" => "Cola de rape crudo DELFIN",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118910502022-delfin-cola-de-rape-crudo-pieza-400-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30204,
                 "supermercado_id"=> $dia,
@@ -4276,15 +4276,15 @@ $p30205 = DB::table("productos")->where("name","Pez espada")->value("id");
                 "descripcion" => "Rodaja de pez espada",
                 "link" => "https://www.carrefour.es/supermercado/rodaja-de-pez-espada-congelada-300-g-aprox/R-VC4AECOMM-696042/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30205,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202011/19/00118910500968____8__600x600.jpg",
-                "peso" => 240,
-                "scrab_id"=> "0110118910500968",
-                "descripcion" => "Pez espada DELFIN",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118910500968-delfin-pez-espada-2-piezas-bolsa-225-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30205,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202011/19/00118910500968____8__600x600.jpg",
+            //     "peso" => 240,
+            //     "scrab_id"=> "0110118910500968",
+            //     "descripcion" => "Pez espada DELFIN",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118910500968-delfin-pez-espada-2-piezas-bolsa-225-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30205,
                 "supermercado_id"=> $dia,
@@ -4332,15 +4332,15 @@ $p30206 = DB::table("productos")->where("name","Lomos de salmón")->value("id");
                 "descripcion" => "Lomo de salmón",
                 "link" => "https://www.carrefour.es/supermercado/lomo-de-salmon-carrefour-3x100-g/R-820613818/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30206,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202202/28/00118910502071____2__1200x1200.jpg",
-                "peso" => 250,
-                "scrab_id"=> "0110118910502071",
-                "descripcion" => "Lomos de salmon PESCANOVA",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118910502071-pescanova-lomos-de-salmon-envase-250-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30206,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202202/28/00118910502071____2__1200x1200.jpg",
+            //     "peso" => 250,
+            //     "scrab_id"=> "0110118910502071",
+            //     "descripcion" => "Lomos de salmon PESCANOVA",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118910502071-pescanova-lomos-de-salmon-envase-250-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30206,
                 "supermercado_id"=> $dia,
@@ -4388,15 +4388,15 @@ $p30207 = DB::table("productos")->where("name","Filete de lenguado")->value("id"
                 "descripcion" => NULL,
                 "link" => NULL,
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30207,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202103/05/00118910501669____3__600x600.jpg",
-                "peso" => 180,
-                "scrab_id"=> "0110118910501669",
-                "descripcion" => "Filete de lenguado DELFIN",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118910501669-delfin-filete-de-lenguado-estuche-180-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30207,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202103/05/00118910501669____3__600x600.jpg",
+            //     "peso" => 180,
+            //     "scrab_id"=> "0110118910501669",
+            //     "descripcion" => "Filete de lenguado DELFIN",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118910501669-delfin-filete-de-lenguado-estuche-180-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30207,
                 "supermercado_id"=> $dia,
@@ -4444,15 +4444,15 @@ $p30208 = DB::table("productos")->where("name","Gambas peladas")->value("id");
                 "descripcion" => "Gambas salvajes peladas crudas",
                 "link" => "https://www.carrefour.es/supermercado/gambas-salvajes-peladas-crudas-carrefour-400-g/R-prod72159/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30208,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202312/18/00118939400778____9__600x600.jpg",
-                "peso" => 400,
-                "scrab_id"=> "0110118939400778",
-                "descripcion" => "Gambas peladas 50-55 piezas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118939400778-el-corte-ingles-gamba-pelada-50-55-piezas-bolsa-400-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30208,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202312/18/00118939400778____9__600x600.jpg",
+            //     "peso" => 400,
+            //     "scrab_id"=> "0110118939400778",
+            //     "descripcion" => "Gambas peladas 50-55 piezas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118939400778-el-corte-ingles-gamba-pelada-50-55-piezas-bolsa-400-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30208,
                 "supermercado_id"=> $dia,
@@ -4500,15 +4500,15 @@ $p30209 = DB::table("productos")->where("name","Mejillón sin concha")->value("i
                 "descripcion" => "Carne de mejillon cocido 80/120",
                 "link" => "https://www.carrefour.es/supermercado/carne-de-mejillon-cocido-80-120-classic-carrefour-400-g/R-522714764/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30209,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/26/00118911001263____9__1200x1200.jpg",
-                "peso" => 180,
-                "scrab_id"=> "0110118911001263",
-                "descripcion" => "Carne de mejillon natural DELFIN",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118911001263-delfin-carne-de-mejillon-natural-envase-180-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30209,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/26/00118911001263____9__1200x1200.jpg",
+            //     "peso" => 180,
+            //     "scrab_id"=> "0110118911001263",
+            //     "descripcion" => "Carne de mejillon natural DELFIN",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118911001263-delfin-carne-de-mejillon-natural-envase-180-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30209,
                 "supermercado_id"=> $dia,
@@ -4556,15 +4556,15 @@ $p30210 = DB::table("productos")->where("name","Langostino crudo")->value("id");
                 "descripcion" => "Langostino crudo",
                 "link" => "https://www.carrefour.es/supermercado/langostino-crudo-carrefour-800-g/R-521031182/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30210,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202312/19/00118938900596____15__600x600.jpg",
-                "peso" => 800,
-                "scrab_id"=> "0110118938902030",
-                "descripcion" => "Langostino crudo 43-48 piezas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118938900596-el-corte-ingles-langostino-crudo-43-48-piezas-estuche-1000-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30210,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202312/19/00118938900596____15__600x600.jpg",
+            //     "peso" => 800,
+            //     "scrab_id"=> "0110118938902030",
+            //     "descripcion" => "Langostino crudo 43-48 piezas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118938900596-el-corte-ingles-langostino-crudo-43-48-piezas-estuche-1000-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30210,
                 "supermercado_id"=> $dia,
@@ -4612,15 +4612,15 @@ $p30211 = DB::table("productos")->where("name","Anillas de pota")->value("id");
                 "descripcion" => "Anilla de pota argentina",
                 "link" => "https://www.carrefour.es/supermercado/anillas-de-pota-argentina-carrefour-450-g/R-649302141/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30211,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202006/10/00118911002279____11__1200x1200.jpg",
-                "peso" => 300,
-                "scrab_id"=> "0110118911002279",
-                "descripcion" => "Anillas de pota DELFIN",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118911002279-delfin-anillas-de-pota-bolsa-300-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30211,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202006/10/00118911002279____11__1200x1200.jpg",
+            //     "peso" => 300,
+            //     "scrab_id"=> "0110118911002279",
+            //     "descripcion" => "Anillas de pota DELFIN",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118911002279-delfin-anillas-de-pota-bolsa-300-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30211,
                 "supermercado_id"=> $dia,
@@ -4668,15 +4668,15 @@ $p30301 = DB::table("productos")->where("name","Almeja / Chirla")->value("id");
                 "descripcion" => NULL,
                 "link" => NULL,
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30301,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201912/19/00118253000105____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118253000105",
-                "descripcion" => "Chirlas",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118253000105-chirlas/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30301,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201912/19/00118253000105____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118253000105",
+            //     "descripcion" => "Chirlas",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118253000105-chirlas/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30301,
                 "supermercado_id"=> $dia,
@@ -4724,15 +4724,15 @@ $p30302 = DB::table("productos")->where("name","Pulpo cocido")->value("id");
                 "descripcion" => "Pata de pulpo cocida",
                 "link" => "https://www.carrefour.es/supermercado/pata-de-pulpo-cocido-carrefour-el-mercado-250-g/R-VC4AECOMM-534228/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30302,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/08/00118284700012____6__1200x1200.jpg",
-                "peso" => 600,
-                "scrab_id"=> "0110118284700012",
-                "descripcion" => "Pulpo cocido COCIMAR",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118284700012-cocimar-pulpo-cocido-peso-aproximado-pieza-500-700-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30302,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/08/00118284700012____6__1200x1200.jpg",
+            //     "peso" => 600,
+            //     "scrab_id"=> "0110118284700012",
+            //     "descripcion" => "Pulpo cocido COCIMAR",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118284700012-cocimar-pulpo-cocido-peso-aproximado-pieza-500-700-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30302,
                 "supermercado_id"=> $dia,
@@ -4781,15 +4781,15 @@ $p30303 = DB::table("productos")->where("name","Calamar entero")->value("id");
                 "descripcion" => "Calamar patagónico",
                 "link" => "https://www.carrefour.es/supermercado/calamar-patagonico-1-kg-aprox/R-VC4AECOMM-073735/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30303,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118257700247____2__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118257700247",
-                "descripcion" => "Calamar elaborado",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118257700247-calamar-elaborado-peso-aproximado-pieza-500-700-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30303,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118257700247____2__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118257700247",
+            //     "descripcion" => "Calamar elaborado",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118257700247-calamar-elaborado-peso-aproximado-pieza-500-700-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30303,
                 "supermercado_id"=> $dia,
@@ -4843,15 +4843,15 @@ $p30304 = DB::table("productos")->where("name","Mejillones")->value("id");
                 // "descripcion" => "Mejillón vivo fresco AGUINAMAR",
                 // "link" => "https://www.carrefour.es/supermercado/mejillon-vivo-fresco-gourmet-ecologico-aguinamar-1-kg/R-826601274/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30304,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202308/28/00118253200101____5__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118253200101",
-                "descripcion" => "Mejillón gallego extra",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118253200101-mejillon-gallego-extra-bolsa-1-kg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30304,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202308/28/00118253200101____5__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118253200101",
+            //     "descripcion" => "Mejillón gallego extra",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118253200101-mejillon-gallego-extra-bolsa-1-kg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30304,
                 "supermercado_id"=> $dia,
@@ -4901,15 +4901,15 @@ $p30305 = DB::table("productos")->where("name","Langostinos cocidos")->value("id
                 "descripcion" => "Langostino cocido 30/40",
                 "link" => "https://www.carrefour.es/supermercado/langostino-cocido-30-40-ud-500-g-aprox/R-530102403/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30305,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118254400478____1__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118254400049",
-                "descripcion" => "Langostino cocido ASC 30/40",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118254400478-langostino-cocido-asc-30-40-pzaskg/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30305,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/12/00118254400478____1__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118254400049",
+            //     "descripcion" => "Langostino cocido ASC 30/40",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118254400478-langostino-cocido-asc-30-40-pzaskg/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30305,
                 "supermercado_id"=> $dia,
@@ -4957,15 +4957,15 @@ $p30401 = DB::table("productos")->where("name","Atún en aceite girasol")->value
                 "descripcion"=> "Atún en aceite de girasol",
                 "link" => "",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30401,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202310/23/00118013200847____3__1200x1200.jpg",
-                "peso" => 336,
-                "scrab_id"=> "0110118013200847",
-                "descripcion"=> "Atún claro en aceite de girasol",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118013200847-el-corte-ingles-atun-claro-en-aceite-de-girasol-pack-6-lata-80-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30401,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202310/23/00118013200847____3__1200x1200.jpg",
+            //     "peso" => 336,
+            //     "scrab_id"=> "0110118013200847",
+            //     "descripcion"=> "Atún claro en aceite de girasol",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118013200847-el-corte-ingles-atun-claro-en-aceite-de-girasol-pack-6-lata-80-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30401,
                 "supermercado_id"=> $dia,
@@ -5013,15 +5013,15 @@ $p30402 = DB::table("productos")->where("name","Mejillones en escabeche")->value
                 "descripcion" => "Mejillones en escabeche 16/20",
                 "link" => "https://www.carrefour.es/supermercado/mejillones-en-escabeche-16-20-classic-carrefour-sin-gluten-pack-de-3-unidades-de-43-g/R-618405050/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30402,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202402/16/00118015101456____6__1200x1200.jpg",
-                "peso" => 129,
-                "scrab_id"=> "0110118015101456",
-                "descripcion" => "Mejillones de Chile en escabeche",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118015101456-el-corte-ingles-mejillones-de-chile-en-escabeche-sin-gluten-13-18-piezas-pack-3-lata-43-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30402,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202402/16/00118015101456____6__1200x1200.jpg",
+            //     "peso" => 129,
+            //     "scrab_id"=> "0110118015101456",
+            //     "descripcion" => "Mejillones de Chile en escabeche",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118015101456-el-corte-ingles-mejillones-de-chile-en-escabeche-sin-gluten-13-18-piezas-pack-3-lata-43-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30402,
                 "supermercado_id"=> $dia,
@@ -5069,15 +5069,15 @@ $p30403 = DB::table("productos")->where("name","Anchoas en aceite oliva")->value
                 "descripcion" => "Filetes de anchoa en aceite de oliva",
                 "link" => "https://www.carrefour.es/supermercado/filetes-de-anchoa-en-aceite-de-oliva-carrefour-30-g/R-521029304/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30403,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202108/26/00118010801308____4__1200x1200.jpg",
-                "peso" => 29,
-                "scrab_id"=> "0110118010801308",
-                "descripcion" => "Filetes de anchoa en aceite de oliva",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118010801308-el-corte-ingles-filetes-de-anchoa-en-aceite-de-oliva-lata-29-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30403,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202108/26/00118010801308____4__1200x1200.jpg",
+            //     "peso" => 29,
+            //     "scrab_id"=> "0110118010801308",
+            //     "descripcion" => "Filetes de anchoa en aceite de oliva",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118010801308-el-corte-ingles-filetes-de-anchoa-en-aceite-de-oliva-lata-29-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30403,
                 "supermercado_id"=> $dia,
@@ -5125,15 +5125,15 @@ $p30404 = DB::table("productos")->where("name","Sardinillas en aceite girasol")-
                 "descripcion" => "Sardinillas en aceite girasol",
                 "link" => "https://www.carrefour.es/supermercado/sardinillas-en-aceite-de-girasol-classic-carrefour-pack-de-2-unidades-de-65-g/R-prod590535/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30404,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL,
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30404,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL,
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30404,
                 "supermercado_id"=> $dia,
@@ -5181,15 +5181,15 @@ $p30405 = DB::table("productos")->where("name","Bonito del norte en Aceite Oliva
                 "descripcion" => "Bonito del norte en aceite de oliva",
                 "link" => "https://www.carrefour.es/supermercado/bonito-del-norte-en-aceite-de-oliva-carrefour-pack-de-3-latas-de-52-g/R-prod630003/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p30405,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202310/23/00118012701381____6__1200x1200.jpg",
-                "peso" => 73,
-                "scrab_id"=> "0110118012701381",
-                "descripcion" => "Bonito del norte en aceite de oliva",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118012701381-el-corte-ingles-bonito-del-norte-en-aceite-de-oliva-lata-73-g-neto-escurrido/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p30405,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202310/23/00118012701381____6__1200x1200.jpg",
+            //     "peso" => 73,
+            //     "scrab_id"=> "0110118012701381",
+            //     "descripcion" => "Bonito del norte en aceite de oliva",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118012701381-el-corte-ingles-bonito-del-norte-en-aceite-de-oliva-lata-73-g-neto-escurrido/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p30405,
                 "supermercado_id"=> $dia,
@@ -5237,15 +5237,15 @@ $p40101 = DB::table("productos")->where("name","Leche entera")->value("id");
                 "descripcion" => "Leche entera brik",
                 "link" => "https://www.carrefour.es/supermercado/leche-entera-carrefour-brik-1-l/R-521006992/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40101,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/08/00120912100268____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110120616500219",
-                "descripcion" => "Leche entera de Galicia brik",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120616500219-el-corte-ingles-leche-entera-de-galicia-brik-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40101,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/08/00120912100268____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110120616500219",
+            //     "descripcion" => "Leche entera de Galicia brik",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120616500219-el-corte-ingles-leche-entera-de-galicia-brik-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40101,
                 "supermercado_id"=> $dia,
@@ -5293,15 +5293,15 @@ $p40102 = DB::table("productos")->where("name","Leche semidesnatada")->value("id
                 "descripcion" => "Leche semidesnatada brik",
                 "link" => "https://www.carrefour.es/supermercado/leche-semidesnatada-carrefour-brik-1-l/R-521007071/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40102,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/26/00120912200233____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110120616600191",
-                "descripcion" => "Leche semidesnata de Galicia brik",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120616600191-el-corte-ingles-leche-semidesnatada-de-galicia-brik-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40102,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/26/00120912200233____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110120616600191",
+            //     "descripcion" => "Leche semidesnata de Galicia brik",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120616600191-el-corte-ingles-leche-semidesnatada-de-galicia-brik-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40102,
                 "supermercado_id"=> $dia,
@@ -5349,15 +5349,15 @@ $p40103 = DB::table("productos")->where("name","Leche desnatada")->value("id");
                 "descripcion" => "Leche desnatada brik",
                 "link" => "https://www.carrefour.es/supermercado/leche-desnatada-carrefour-brik-1-l/R-521007093/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40103,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/26/00120912300207____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110120616700173",
-                "descripcion" => "Leche desnatada de Galicia brik",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120616700173-el-corte-ingles-leche-desnatada-de-galicia-brik-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40103,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/26/00120912300207____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110120616700173",
+            //     "descripcion" => "Leche desnatada de Galicia brik",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120616700173-el-corte-ingles-leche-desnatada-de-galicia-brik-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40103,
                 "supermercado_id"=> $dia,
@@ -5405,15 +5405,15 @@ $p40201 = DB::table("productos")->where("name","Arroz con leche")->value("id");
                 "descripcion" => "Arroz con leche pack 4",
                 "link" => "https://www.carrefour.es/supermercado/arroz-con-leche-carrefour-pack-de-4-unidades-de-115-g/R-VC4AECOMM-440130/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40201,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202108/16/00118823700515____4__1200x1200.jpg",
-                "peso" => 520,
-                "scrab_id"=> "0110118823700515",
-                "descripcion" => "Arroz con leche pack 4",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118823700515-el-corte-ingles-arroz-con-leche-sin-gluten-pack-4-unidades-130-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40201,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202108/16/00118823700515____4__1200x1200.jpg",
+            //     "peso" => 520,
+            //     "scrab_id"=> "0110118823700515",
+            //     "descripcion" => "Arroz con leche pack 4",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118823700515-el-corte-ingles-arroz-con-leche-sin-gluten-pack-4-unidades-130-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40201,
                 "supermercado_id"=> $dia,
@@ -5461,15 +5461,15 @@ $p40202 = DB::table("productos")->where("name","Flan de huevo")->value("id");
                 "descripcion" => "Flan de huevo al baño Maria pack 4",
                 "link" => "https://www.carrefour.es/supermercado/flan-de-huevo-al-bano-maria-carrefour-classic-sin-gluten-pack-de-4-unidades-de-100-g/R-521029829/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40202,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201610/05/00118820801076____1__600x600.jpg",
-                "peso" => 400,
-                "scrab_id"=> "0110118820801076",
-                "descripcion" => "Flan de huevo pack 4",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118820801076-el-corte-ingles-flan-de-huevo-pack-4-unidades-100-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40202,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201610/05/00118820801076____1__600x600.jpg",
+            //     "peso" => 400,
+            //     "scrab_id"=> "0110118820801076",
+            //     "descripcion" => "Flan de huevo pack 4",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118820801076-el-corte-ingles-flan-de-huevo-pack-4-unidades-100-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40202,
                 "supermercado_id"=> $dia,
@@ -5517,15 +5517,15 @@ $p40203 = DB::table("productos")->where("name","Flan de vainilla")->value("id");
                 "descripcion" => "Flan sabor Vainilla con caramelo pack 6",
                 "link" => "https://www.carrefour.es/supermercado/flan-sabor-vainilla-con-caramelo-carrefour-sin-gluten-pack-de-6-unidades-de-100-g/R-VC4AECOMM-350960/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40203,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201702/13/00118820801084____1__600x600.jpg",
-                "peso" => 400,
-                "scrab_id"=> "0110118820801084",
-                "descripcion" => "Flan sabor Vainilla pack 4",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118820801084-el-corte-ingles-flan-de-vainilla-sin-gluten-pack-4-unidades-100-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40203,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201702/13/00118820801084____1__600x600.jpg",
+            //     "peso" => 400,
+            //     "scrab_id"=> "0110118820801084",
+            //     "descripcion" => "Flan sabor Vainilla pack 4",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118820801084-el-corte-ingles-flan-de-vainilla-sin-gluten-pack-4-unidades-100-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40203,
                 "supermercado_id"=> $dia,
@@ -5573,15 +5573,15 @@ $p40204 = DB::table("productos")->where("name","Natillas")->value("id");
                 "descripcion" => "Natillas de vainilla pack 4",
                 "link" => "https://www.carrefour.es/supermercado/natillas-de-vainilla-carrefour-classic-pack-de-4-unidades-de-125-g/R-835176181/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40204,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201608/17/00118820701953____1__600x600.jpg",
-                "peso" => 500,
-                "scrab_id"=> "0110118820701953",
-                "descripcion" => "Natillas de vainilla pack 4",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118820701953-el-corte-ingles-natillas-de-vainilla-pack-4-unidades-125-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40204,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201608/17/00118820701953____1__600x600.jpg",
+            //     "peso" => 500,
+            //     "scrab_id"=> "0110118820701953",
+            //     "descripcion" => "Natillas de vainilla pack 4",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118820701953-el-corte-ingles-natillas-de-vainilla-pack-4-unidades-125-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40204,
                 "supermercado_id"=> $dia,
@@ -5629,15 +5629,15 @@ $p40205 = DB::table("productos")->where("name","Yogur bebible fresa y plátano")
                 "descripcion" => "Yogur liquido fresa y plátano 1L",
                 "link" => "https://www.carrefour.es/supermercado/yogur-liquido-fresa-y-platano-carrefour-classicsin-gluten-1-kg/R-prod300427/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40205,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202209/19/00118820503169____3__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118820503169",
-                "descripcion" => "Yogur liquido fresa y plátano 1L",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118820503169-el-corte-ingles-yogur-liquido-con-fresa-y-platano-sin-gluten-botella-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40205,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202209/19/00118820503169____3__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118820503169",
+            //     "descripcion" => "Yogur liquido fresa y plátano 1L",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118820503169-el-corte-ingles-yogur-liquido-con-fresa-y-platano-sin-gluten-botella-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40205,
                 "supermercado_id"=> $dia,
@@ -5685,15 +5685,15 @@ $p40206 = DB::table("productos")->where("name","Yogur natural")->value("id");
                 "descripcion" => "Yogur natural pack",
                 "link" => "https://www.carrefour.es/supermercado/yogur-natural-carrefour-classic-pack-de-4-unidades-de-125-g/R-VC4AECOMM-737854/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40206,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201905/07/00118820101873____6__600x600.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118820101303",
-                "descripcion" => "Yogur natural pack",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118820101873-el-corte-ingles-yogur-natural-pack-8-unidades-125-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40206,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201905/07/00118820101873____6__600x600.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118820101303",
+            //     "descripcion" => "Yogur natural pack",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118820101873-el-corte-ingles-yogur-natural-pack-8-unidades-125-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40206,
                 "supermercado_id"=> $dia,
@@ -5741,15 +5741,15 @@ $p40207 = DB::table("productos")->where("name","Yogur sabores")->value("id");
                 "descripcion" => "Yogur con sabor a fresa pack",
                 "link" => "https://www.carrefour.es/supermercado/yogur-sabor-fresa-carrefour-classic-pack-de-4-unidades-de-125-g/R-VC4AECOMM-372922/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40207,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL,
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40207,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL,
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40207,
                 "supermercado_id"=> $dia,
@@ -5797,15 +5797,15 @@ $p40208 = DB::table("productos")->where("name","Nata montada (spray)")->value("i
                 "descripcion" => "Nata montada azucarada ligera",
                 "link" => "https://www.carrefour.es/supermercado/nata-montada-azucarada-ligera-carrefour-spray-250-g/R-787879747/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40208,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202306/20/00120911900296____7__1200x1200.jpg",
-                "peso" => 250,
-                "scrab_id"=> "0110120616300230",
-                "descripcion" => "Nata montada ligera ASTURIANA",
-                "link" => "https://www.elcorteingles.es/supermercado/0110120616300230-asturiana-nata-montada-ligera-spray-250-ml/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40208,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202306/20/00120911900296____7__1200x1200.jpg",
+            //     "peso" => 250,
+            //     "scrab_id"=> "0110120616300230",
+            //     "descripcion" => "Nata montada ligera ASTURIANA",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110120616300230-asturiana-nata-montada-ligera-spray-250-ml/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40208,
                 "supermercado_id"=> $dia,
@@ -5853,15 +5853,15 @@ $p40301 = DB::table("productos")->where("name","Queso fresco")->value("id");
                 "descripcion" => "Queso fresco tradicional",
                 "link" => "https://www.carrefour.es/supermercado/queso-fresco-tradicional-carrefour-250-g/R-618303487/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40301,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201609/22/00118382100867____1__600x600.jpg",
-                "peso" => 250,
-                "scrab_id"=> "0110118382100867",
-                "descripcion" => "Queso fresco tipo Burgos",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118382100867-el-corte-ingles-queso-fresco-natural-pack-4-x-6250-g-envase-250-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40301,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201609/22/00118382100867____1__600x600.jpg",
+            //     "peso" => 250,
+            //     "scrab_id"=> "0110118382100867",
+            //     "descripcion" => "Queso fresco tipo Burgos",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118382100867-el-corte-ingles-queso-fresco-natural-pack-4-x-6250-g-envase-250-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40301,
                 "supermercado_id"=> $dia,
@@ -5909,15 +5909,15 @@ $p40302 = DB::table("productos")->where("name","Queso curado de oveja")->value("
                 "descripcion" => "Queso de oveja curado",
                 "link" => "https://www.carrefour.es/supermercado/queso-de-oveja-curado-classic-carrefour-cuna-250-g/R-VC4AECOMM-104885/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40302,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202107/02/00118389400419____3__1200x1200.jpg",
-                "peso" => 300,
-                "scrab_id"=> "0110118389400419",
-                "descripcion" => "Queso curado de oveja",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118389400419-el-corte-ingles-queso-curado-de-oveja-elaborado-con-leche-cruda-cuna-300-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40302,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202107/02/00118389400419____3__1200x1200.jpg",
+            //     "peso" => 300,
+            //     "scrab_id"=> "0110118389400419",
+            //     "descripcion" => "Queso curado de oveja",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118389400419-el-corte-ingles-queso-curado-de-oveja-elaborado-con-leche-cruda-cuna-300-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40302,
                 "supermercado_id"=> $dia,
@@ -5965,15 +5965,15 @@ $p40303 = DB::table("productos")->where("name","Queso semicurado")->value("id");
                 "descripcion" => "Queso de mezcla semicurado",
                 "link" => "https://www.carrefour.es/supermercado/queso-de-mezcla-semicurado-carrefour-classic-cuna-de-500-g-aprox/R-VC4AECOMM-675133/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40303,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/04/00118389600257____9__1200x1200.jpg",
-                "peso" => 250,
-                "scrab_id"=> "0110118389600257",
-                "descripcion" => "Queso de mezcla semicurado",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118389600257-el-corte-ingles-selection-queso-semicurado-mezcla-madurado-graso-elaborado-con-leche-pasteurizada-cuna-250-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40303,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/04/00118389600257____9__1200x1200.jpg",
+            //     "peso" => 250,
+            //     "scrab_id"=> "0110118389600257",
+            //     "descripcion" => "Queso de mezcla semicurado",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118389600257-el-corte-ingles-selection-queso-semicurado-mezcla-madurado-graso-elaborado-con-leche-pasteurizada-cuna-250-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40303,
                 "supermercado_id"=> $dia,
@@ -6021,15 +6021,15 @@ $p40304 = DB::table("productos")->where("name","Queso Mozarella rayado")->value(
                 "descripcion" => "Queso Mozzarella rallado",
                 "link" => "https://www.carrefour.es/supermercado/queso-rallado-mozzarella-carrefour-200-g/R-521030768/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40304,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201701/20/00118395400411____1__600x600.jpg",
-                "peso" => 200,
-                "scrab_id"=> "0110118395400411",
-                "descripcion" => "Queso Mozzarella rallado",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118395400411-el-corte-ingles-queso-mozzarella-rallada-de-vaca-elaborado-con-leche-pasteurizada-bolsa-200-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40304,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201701/20/00118395400411____1__600x600.jpg",
+            //     "peso" => 200,
+            //     "scrab_id"=> "0110118395400411",
+            //     "descripcion" => "Queso Mozzarella rallado",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118395400411-el-corte-ingles-queso-mozzarella-rallada-de-vaca-elaborado-con-leche-pasteurizada-bolsa-200-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40304,
                 "supermercado_id"=> $dia,
@@ -6077,15 +6077,15 @@ $p40401 = DB::table("productos")->where("name","Huevos M")->value("id");
                 "descripcion" => "Huevos medianos de gallina",
                 "link" => "https://www.carrefour.es/supermercado/huevos-de-gallinas-criadas-en-suelo-carrefour-el-mercado-12-ud/R-VC4AECOMM-307935/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40401,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/11/00118840000139____6__1200x1200.jpg",
-                "peso" => 12,
-                "scrab_id"=> "0110118840000139",
-                "descripcion" => "Huevos medianos de gallina criadas en suelo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118840000139-el-corte-ingles-huevos-de-gallinas-criadas-en-suelo-categoria-a-clase-m-estuche-12-unidades/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40401,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/11/00118840000139____6__1200x1200.jpg",
+            //     "peso" => 12,
+            //     "scrab_id"=> "0110118840000139",
+            //     "descripcion" => "Huevos medianos de gallina criadas en suelo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118840000139-el-corte-ingles-huevos-de-gallinas-criadas-en-suelo-categoria-a-clase-m-estuche-12-unidades/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40401,
                 "supermercado_id"=> $dia,
@@ -6133,15 +6133,15 @@ $p40402 = DB::table("productos")->where("name","Huevos L")->value("id");
                 "descripcion" => "Huevos grandes L de gallina",
                 "link" => "https://www.carrefour.es/supermercado/huevos-frescos-carrefour-el-mercado-12-ud/R-VC4AECOMM-307927/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40402,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/11/00118840000154____4__1200x1200.jpg",
-                "peso" => 12,
-                "scrab_id"=> "0110118840000154",
-                "descripcion" => "Huevos grandes L de gallinas criadas en el suelo",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118840000154-el-corte-ingles-huevos-de-gallinas-criadas-en-suelo-categoria-a-clase-l-estuche-12-unidades/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40402,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/11/00118840000154____4__1200x1200.jpg",
+            //     "peso" => 12,
+            //     "scrab_id"=> "0110118840000154",
+            //     "descripcion" => "Huevos grandes L de gallinas criadas en el suelo",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118840000154-el-corte-ingles-huevos-de-gallinas-criadas-en-suelo-categoria-a-clase-l-estuche-12-unidades/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40402,
                 "supermercado_id"=> $dia,
@@ -6189,15 +6189,15 @@ $p40403 = DB::table("productos")->where("name","Huevos XL")->value("id");
                 "descripcion" => "Huevos extra grandes L-XL de gallina",
                 "link" => "https://www.carrefour.es/supermercado/huevos-frescos-carrefour-el-mercado-12-ud/R-VC4AECOMM-307925/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p40403,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/08/00118840000147____2__1200x1200.jpg",
-                "peso" => 10,
-                "scrab_id"=> "0110118840000147",
-                "descripcion" => "Huevos extra grandes L-XL de gallina",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118840000147-el-corte-ingles-huevos-de-gallinas-criadas-en-suelo-categoria-a-clase-l-xl-estuche-10-unidades/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p40403,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/08/00118840000147____2__1200x1200.jpg",
+            //     "peso" => 10,
+            //     "scrab_id"=> "0110118840000147",
+            //     "descripcion" => "Huevos extra grandes L-XL de gallina",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118840000147-el-corte-ingles-huevos-de-gallinas-criadas-en-suelo-categoria-a-clase-l-xl-estuche-10-unidades/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p40403,
                 "supermercado_id"=> $dia,
@@ -6245,15 +6245,15 @@ $p50101 = DB::table("productos")->where("name","Girasol")->value("id");
                 "descripcion" => "Aceite refinado de girasol",
                 "link" => "https://www.carrefour.es/supermercado/aceite-de-girasol-carrefour-classic-1-l/R-521009768/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p50101,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202012/22/00120904100185____7__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118046000099",
-                "descripcion" => "Aceite refinado de girasol",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118046000099-el-corte-ingles-aceite-refinado-de-girasol-botella-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p50101,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202012/22/00120904100185____7__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118046000099",
+            //     "descripcion" => "Aceite refinado de girasol",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118046000099-el-corte-ingles-aceite-refinado-de-girasol-botella-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p50101,
                 "supermercado_id"=> $dia,
@@ -6301,15 +6301,15 @@ $p50102 = DB::table("productos")->where("name","Oliva intenso")->value("id");
                 "descripcion" => "Aceite de oliva intenso con aceite refinado",
                 "link" => "https://www.carrefour.es/supermercado/aceite-de-oliva-intenso-1-carrefour-1-l/R-526600670/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p50102,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/08/00120903000196____13__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118044900084",
-                "descripcion" => "Aceite de oliva intenso con aceite refinado",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118044900084-el-corte-ingles-aceite-de-oliva-intenso-1-contiene-aceites-refinados-y-virgenes-botella-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p50102,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202401/08/00120903000196____13__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118044900084",
+            //     "descripcion" => "Aceite de oliva intenso con aceite refinado",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118044900084-el-corte-ingles-aceite-de-oliva-intenso-1-contiene-aceites-refinados-y-virgenes-botella-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p50102,
                 "supermercado_id"=> $dia,
@@ -6357,15 +6357,15 @@ $p50103 = DB::table("productos")->where("name","Oliva virgen")->value("id");
                 "descripcion" => "Aceite de oliva virgen",
                 "link" => "https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-carrefour-1-l/R-639802050/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p50103,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202207/18/00120903700183____1__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118045600048",
-                "descripcion" => "Aceite de oliva virgen",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118045600048-el-corte-ingles-aceite-de-oliva-virgen-botella-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p50103,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202207/18/00120903700183____1__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118045600048",
+            //     "descripcion" => "Aceite de oliva virgen",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118045600048-el-corte-ingles-aceite-de-oliva-virgen-botella-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p50103,
                 "supermercado_id"=> $dia,
@@ -6413,15 +6413,15 @@ $p50104 = DB::table("productos")->where("name","Oliva Virgen Extra")->value("id"
                 "descripcion" => "Aceite de oliva virgen extra",
                 "link" => "https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-carrefour-1-l/R-520660335/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p50104,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202003/12/00120903900312____20__1200x1200.jpg",
-                "peso" => 1000,
-                "scrab_id"=> "0110118045800101",
-                "descripcion" => "Aceite de oliva virgen extra",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118045800101-el-corte-ingles-aceite-de-oliva-virgen-extra-botella-1-l/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p50104,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202003/12/00120903900312____20__1200x1200.jpg",
+            //     "peso" => 1000,
+            //     "scrab_id"=> "0110118045800101",
+            //     "descripcion" => "Aceite de oliva virgen extra",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118045800101-el-corte-ingles-aceite-de-oliva-virgen-extra-botella-1-l/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p50104,
                 "supermercado_id"=> $dia,
@@ -6469,15 +6469,15 @@ $p50201 = DB::table("productos")->where("name","Mantequilla")->value("id");
                 "descripcion" => "Mantequilla sin sal añadida",
                 "link" => "https://www.carrefour.es/supermercado/mantequilla-pastilla-sin-sal-carrefour-250-g/R-fprod1350157/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p50201,
-                "supermercado_id"=> $eci,
-                "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202006/29/00118815101979____1__1200x1200.jpg",
-                "peso" => 250,
-                "scrab_id"=> "0110118815101979",
-                "descripcion" => "Mantequilla sin sal añadida",
-                "link" => "https://www.elcorteingles.es/supermercado/0110118815101979-el-corte-ingles-mantequilla-pastilla-250-g/",
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p50201,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202006/29/00118815101979____1__1200x1200.jpg",
+            //     "peso" => 250,
+            //     "scrab_id"=> "0110118815101979",
+            //     "descripcion" => "Mantequilla sin sal añadida",
+            //     "link" => "https://www.elcorteingles.es/supermercado/0110118815101979-el-corte-ingles-mantequilla-pastilla-250-g/",
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p50201,
                 "supermercado_id"=> $dia,
@@ -6525,15 +6525,15 @@ $p50202 = DB::table("productos")->where("name","Margarina")->value("id");
                 "descripcion" => "Margarina",
                 "link" => "https://www.carrefour.es/supermercado/margarina-carrefour-500-g/R-prod830327/p",
                 ]);
-            DB::table("supermercadoproductos")->insert([
-                "producto_id"=> $p50202,
-                "supermercado_id"=> $eci,
-                "img_url" => NULL,
-                "peso" => NULL,
-                "scrab_id"=> NULL,
-                "descripcion" => NULL,
-                "link" => NULL,
-                ]);
+            // DB::table("supermercadoproductos")->insert([
+            //     "producto_id"=> $p50202,
+            //     "supermercado_id"=> $eci,
+            //     "img_url" => NULL,
+            //     "peso" => NULL,
+            //     "scrab_id"=> NULL,
+            //     "descripcion" => NULL,
+            //     "link" => NULL,
+            //     ]);
             DB::table("supermercadoproductos")->insert([
                 "producto_id"=> $p50202,
                 "supermercado_id"=> $dia,
@@ -6581,15 +6581,15 @@ $p60101 = DB::table("productos")->where("name","Limones")->value("id");
                         "descripcion" => "Limones SIMPLY",
                         "link" => "https://www.carrefour.es/supermercado/limon-simply-1-kg/R-536500245/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60101,
-                        "supermercado_id"=> $eci,
-                        "img_url"=> "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/24/00118156703144____9__1200x1200.jpg",
-                        "peso" => 750,
-                        "scrab_id"=> "0110118156703144",
-                        "descripcion" => "Limones",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118156703144-el-corte-ingles-limones-malla-750-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60101,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url"=> "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/24/00118156703144____9__1200x1200.jpg",
+                    //     "peso" => 750,
+                    //     "scrab_id"=> "0110118156703144",
+                    //     "descripcion" => "Limones",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118156703144-el-corte-ingles-limones-malla-750-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60101,
                         "supermercado_id"=> $dia,
@@ -6637,15 +6637,15 @@ $p60102 = DB::table("productos")->where("name","Naranjas (zumo)")->value("id");
                         "descripcion" => "Naranajas para zumo SIMPLY",
                         "link" => "https://www.carrefour.es/supermercado/naranjas-de-zumo-simpl-4-kg/R-VC4AECOMM-165922/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60102,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/24/00118156700439____6__1200x1200.jpg",
-                        "peso" => 3000,
-                        "scrab_id"=> "0110118156700439",
-                        "descripcion" => "Naranajas para zumo",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118156700439-el-corte-ingles-naranja-de-zumo-malla-3-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60102,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/24/00118156700439____6__1200x1200.jpg",
+                    //     "peso" => 3000,
+                    //     "scrab_id"=> "0110118156700439",
+                    //     "descripcion" => "Naranajas para zumo",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118156700439-el-corte-ingles-naranja-de-zumo-malla-3-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60102,
                         "supermercado_id"=> $dia,
@@ -6693,15 +6693,15 @@ $p60103 = DB::table("productos")->where("name","Mandarinas")->value("id");
                         "descripcion" => "Mandarinas",
                         "link" => "https://www.carrefour.es/supermercado/mandarina-malla-15-kg/R-575401793/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60103,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/24/00118156702344____8__1200x1200.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118156702344",
-                        "descripcion" => "Mandarinas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118156702344-el-corte-ingles-mandarina-bolsa-1-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60103,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202304/24/00118156702344____8__1200x1200.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118156702344",
+                    //     "descripcion" => "Mandarinas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118156702344-el-corte-ingles-mandarina-bolsa-1-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60103,
                         "supermercado_id"=> $dia,
@@ -6749,15 +6749,15 @@ $p60201 = DB::table("productos")->where("name","Bananas")->value("id");
                         "descripcion" => "Bananas",
                         "link" => "https://www.carrefour.es/supermercado/banana-a-granel-1-kg-aprox/R-529921745/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60201,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/26/00118109700015____1__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118109700015",
-                        "descripcion" => "Bananas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118109700015-banana-al-peso-peso-aproximado-de-la-unidad-150-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60201,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/26/00118109700015____1__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118109700015",
+                    //     "descripcion" => "Bananas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118109700015-banana-al-peso-peso-aproximado-de-la-unidad-150-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60201,
                         "supermercado_id"=> $dia,
@@ -6805,15 +6805,15 @@ $p60202 = DB::table("productos")->where("name","Plátano canario")->value("id");
                         "descripcion" => "Plátano de Canarias",
                         "link" => "https://www.carrefour.es/supermercado/platano-carrefour-12-kg-aprox/R-VC4AECOMM-779025/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60202,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/24/00118109600041____5__1200x1200.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118109600041",
-                        "descripcion" => "Plátano de Canarias",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118109600041-platano-igp-de-canarias-al-peso-peso-aproximado-de-la-unidad-135-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60202,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/24/00118109600041____5__1200x1200.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118109600041",
+                    //     "descripcion" => "Plátano de Canarias",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118109600041-platano-igp-de-canarias-al-peso-peso-aproximado-de-la-unidad-135-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60202,
                         "supermercado_id"=> $dia,
@@ -6861,15 +6861,15 @@ $p60301 = DB::table("productos")->where("name","Golden")->value("id");
                         "descripcion" => "Manzana Golden",
                         "link" => "https://www.carrefour.es/supermercado/manzana-golden-carrefour-1-kg-aprox/R-VC4AECOMM-235331/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60301,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201812/17/00118105800025____2__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118105800025",
-                        "descripcion" => "Manzana Golden",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118105800025-manzana-golden-al-peso-peso-aproximado-de-la-unidad-200-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60301,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201812/17/00118105800025____2__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118105800025",
+                    //     "descripcion" => "Manzana Golden",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118105800025-manzana-golden-al-peso-peso-aproximado-de-la-unidad-200-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60301,
                         "supermercado_id"=> $dia,
@@ -6917,15 +6917,15 @@ $p60302 = DB::table("productos")->where("name","Roja")->value("id");
                         "descripcion" => "Manzana roja",
                         "link" => "https://www.carrefour.es/supermercado/manzana-royal-gala-circulo-de-calidad-1-kg-aprox/R-550003481/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60302,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118101900126____2__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118101900126",
-                        "descripcion" => "Manzana roja",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118101900126-manzana-starking-igp-de-girona-al-peso-peso-aproximado-de-la-unidad-250-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60302,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118101900126____2__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118101900126",
+                    //     "descripcion" => "Manzana roja",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118101900126-manzana-starking-igp-de-girona-al-peso-peso-aproximado-de-la-unidad-250-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60302,
                         "supermercado_id"=> $dia,
@@ -6973,15 +6973,15 @@ $p60401 = DB::table("productos")->where("name","Conferencia")->value("id");
                         "descripcion" => "Pera Conferencia",
                         "link" => "https://www.carrefour.es/supermercado/pera-conferencia-carrefour-1-kg-aprox/R-600709236/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60401,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/27/00118106100037____8__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118106100037",
-                        "descripcion" => "Pera Conferencia",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118106100037-pera-conferencia-al-peso-peso-aproximado-de-la-unidad-250-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60401,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/27/00118106100037____8__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118106100037",
+                    //     "descripcion" => "Pera Conferencia",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118106100037-pera-conferencia-al-peso-peso-aproximado-de-la-unidad-250-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60401,
                         "supermercado_id"=> $dia,
@@ -7029,15 +7029,15 @@ $p60402 = DB::table("productos")->where("name","Ercolina")->value("id");
                         "descripcion" => "Pera blanquilla / Ercolini",
                         "link" => "https://www.carrefour.es/supermercado/pera-blanquilla-carrefour-1-kg-aprox/R-581701543/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60402,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/27/00118106100045____3__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118106100045",
-                        "descripcion" => "Pera blanquilla / Ercolini",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118106100045-pera-blanquilla-al-peso-peso-aproximado-de-la-unidad-150-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60402,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/27/00118106100045____3__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118106100045",
+                    //     "descripcion" => "Pera blanquilla / Ercolini",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118106100045-pera-blanquilla-al-peso-peso-aproximado-de-la-unidad-150-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60402,
                         "supermercado_id"=> $dia,
@@ -7085,15 +7085,15 @@ $p60501 = DB::table("productos")->where("name","Aguacate")->value("id");
                         "descripcion" => "Aguacates",
                         "link" => "https://www.carrefour.es/supermercado/aguacate-selecta-500-g/R-854100334/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60501,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202307/13/00118156300057____1__1200x1200.jpg",
-                        "peso" => 200,
-                        "scrab_id"=> "0110118156300057",
-                        "descripcion" => "Aguacates",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118156300057-aguacate-unidad-200-g-peso-aproximado/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60501,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202307/13/00118156300057____1__1200x1200.jpg",
+                    //     "peso" => 200,
+                    //     "scrab_id"=> "0110118156300057",
+                    //     "descripcion" => "Aguacates",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118156300057-aguacate-unidad-200-g-peso-aproximado/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60501,
                         "supermercado_id"=> $dia,
@@ -7141,15 +7141,15 @@ $p60502 = DB::table("productos")->where("name","Ciruela")->value("id");
                         "descripcion" => "Ciruelas",
                         "link" => "https://www.carrefour.es/supermercado/ciruela-roja-a-granel-1-kg-aprox/R-833311198/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60502,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118105400032____1__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118105400032",
-                        "descripcion" => "Ciruelas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118105400032-ciruela-morada-al-peso/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60502,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118105400032____1__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118105400032",
+                    //     "descripcion" => "Ciruelas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118105400032-ciruela-morada-al-peso/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60502,
                         "supermercado_id"=> $dia,
@@ -7197,15 +7197,15 @@ $p60601 = DB::table("productos")->where("name","Manzanilla")->value("id");
                         "descripcion" => "Aceitunas manzanilla sin hueso",
                         "link" => "https://www.carrefour.es/supermercado/aceitunas-verdes-manzanilla-sin-hueso-carrefour-400-g/R-VC4AECOMM-488058/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60601,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202011/26/00120940402819____2__1200x1200.jpg",
-                        "peso" => 210,
-                        "scrab_id"=> "0110118040400683",
-                        "descripcion" => "Aceitunas manzanilla sin hueso",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118040400683-el-corte-ingles-aceitunas-verdes-manzanilla-deshuesadas-envase-210-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60601,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202011/26/00120940402819____2__1200x1200.jpg",
+                    //     "peso" => 210,
+                    //     "scrab_id"=> "0110118040400683",
+                    //     "descripcion" => "Aceitunas manzanilla sin hueso",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118040400683-el-corte-ingles-aceitunas-verdes-manzanilla-deshuesadas-envase-210-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60601,
                         "supermercado_id"=> $dia,
@@ -7253,15 +7253,15 @@ $p60602 = DB::table("productos")->where("name","Negra")->value("id");
                         "descripcion" => "Aceitunas negras deshuesadas",
                         "link" => "https://www.carrefour.es/supermercado/aceitunas-negras-cacerenas-sin-hueso-carrefour-150-g/R-VC4AECOMM-488032/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60602,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201807/19/00120941700336____3__600x600.jpg",
-                        "peso" => 150,
-                        "scrab_id"=> "0110118040900096",
-                        "descripcion" => "Aceitunas negras deshuesadas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118040900096-el-corte-ingles-aceitunas-negras-deshuesadas-extra-lata-150-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60602,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201807/19/00120941700336____3__600x600.jpg",
+                    //     "peso" => 150,
+                    //     "scrab_id"=> "0110118040900096",
+                    //     "descripcion" => "Aceitunas negras deshuesadas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118040900096-el-corte-ingles-aceitunas-negras-deshuesadas-extra-lata-150-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60602,
                         "supermercado_id"=> $dia,
@@ -7309,15 +7309,15 @@ $p60603 = DB::table("productos")->where("name","Rellena anchoa")->value("id");
                         "descripcion" => "Aceitunas rellenas de anchoa",
                         "link" => "https://www.carrefour.es/supermercado/aceitunas-verdes-rellenas-de-anchoa-carrefour-150-g/R-VC4AECOMM-441966/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60603,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202204/11/00120940801127____6__1200x1200.jpg",
-                        "peso" => 130,
-                        "scrab_id"=> "0110118040600399",
-                        "descripcion" => "Aceitunas rellenas de anchoa",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118040600399-el-corte-ingles-aceitunas-rellenas-de-anchoa-lata-130-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60603,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202204/11/00120940801127____6__1200x1200.jpg",
+                    //     "peso" => 130,
+                    //     "scrab_id"=> "0110118040600399",
+                    //     "descripcion" => "Aceitunas rellenas de anchoa",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118040600399-el-corte-ingles-aceitunas-rellenas-de-anchoa-lata-130-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60603,
                         "supermercado_id"=> $dia,
@@ -7365,15 +7365,15 @@ $p60701 = DB::table("productos")->where("name","Fresas")->value("id");
                         "descripcion" => "Fresón",
                         "link" => "https://www.carrefour.es/supermercado/freson-tarrina-500-g/R-521032196/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60701,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201709/25/00118155600184____15__600x600.jpg",
-                        "peso" => 400,
-                        "scrab_id"=> "0110118155600184",
-                        "descripcion" => "Fresón",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118155600184-freson-tarrina-400-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60701,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201709/25/00118155600184____15__600x600.jpg",
+                    //     "peso" => 400,
+                    //     "scrab_id"=> "0110118155600184",
+                    //     "descripcion" => "Fresón",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118155600184-freson-tarrina-400-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60701,
                         "supermercado_id"=> $dia,
@@ -7421,15 +7421,15 @@ $p60702 = DB::table("productos")->where("name","Uva blanca")->value("id");
                         "descripcion" => "Uva blanca sin semilla",
                         "link" => "https://www.carrefour.es/supermercado/uva-blanca-sin-pepitas-carrefour-bandeja-de-500-g/R-fprod1460464/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60702,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202006/15/00118158400806____15__600x600.jpg",
-                        "peso" => 500,
-                        "scrab_id"=> "0110118158400806",
-                        "descripcion" => "Uva blanca sin semilla",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118158400806-sin-peps-uva-blanca-sin-semilla-tarrina-500-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60702,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202006/15/00118158400806____15__600x600.jpg",
+                    //     "peso" => 500,
+                    //     "scrab_id"=> "0110118158400806",
+                    //     "descripcion" => "Uva blanca sin semilla",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118158400806-sin-peps-uva-blanca-sin-semilla-tarrina-500-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60702,
                         "supermercado_id"=> $dia,
@@ -7477,15 +7477,15 @@ $p60801 = DB::table("productos")->where("name","Kiwi")->value("id");
                         "descripcion" => "Kiwi verde",
                         "link" => "https://www.carrefour.es/supermercado/kiwi-circulo-de-calidad-a-granel-1-kg-aprox/R-prod730834/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60801,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/27/00118109300063____1__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118109300063",
-                        "descripcion" => "Kiwi verde",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118109300063-kiwi-verde-al-peso-peso-aproximado-de-la-unidad-130-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60801,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/27/00118109300063____1__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118109300063",
+                    //     "descripcion" => "Kiwi verde",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118109300063-kiwi-verde-al-peso-peso-aproximado-de-la-unidad-130-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60801,
                         "supermercado_id"=> $dia,
@@ -7533,15 +7533,15 @@ $p60802 = DB::table("productos")->where("name","Mango")->value("id");
                         "descripcion" => "Mango",
                         "link" => "https://www.carrefour.es/supermercado/mango-carrefour-a-granel-1-kg-aprox/R-VC4AECOMM-430552/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60802,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201709/04/00118105000303____2__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118105000303",
-                        "descripcion" => "Mango",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118105000303-mango-sweet-pieza-400-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60802,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201709/04/00118105000303____2__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118105000303",
+                    //     "descripcion" => "Mango",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118105000303-mango-sweet-pieza-400-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60802,
                         "supermercado_id"=> $dia,
@@ -7589,15 +7589,15 @@ $p60803 = DB::table("productos")->where("name","Melon")->value("id");
                         "descripcion" => "Melón verde piel de sapo",
                         "link" => "https://www.carrefour.es/supermercado/melon-piel-de-sapo-4-kg-aprox/R-521032186/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60803,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201606/01/00118106000096____1__600x600.jpg",
-                        "peso" => 3500,
-                        "scrab_id"=> "0110118106000096",
-                        "descripcion" => "Melón verde piel de sapo",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118106000096-melon-piel-de-sapo-pieza-35-kg-peso-aproximado/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60803,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201606/01/00118106000096____1__600x600.jpg",
+                    //     "peso" => 3500,
+                    //     "scrab_id"=> "0110118106000096",
+                    //     "descripcion" => "Melón verde piel de sapo",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118106000096-melon-piel-de-sapo-pieza-35-kg-peso-aproximado/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60803,
                         "supermercado_id"=> $dia,
@@ -7645,15 +7645,15 @@ $p60804 = DB::table("productos")->where("name","Piña")->value("id");
                         "descripcion" => "Piña",
                         "link" => "https://www.carrefour.es/supermercado/pina-golden-ripe-25-kg-aprox/R-521032201/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60804,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118109500019____3__600x600.jpg",
-                        "peso" => 1800,
-                        "scrab_id"=> "0110118109500019",
-                        "descripcion" => "Piña",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118109500019-pina-de-costa-rica-pieza-18-kg-peso-aproximado/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60804,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118109500019____3__600x600.jpg",
+                    //     "peso" => 1800,
+                    //     "scrab_id"=> "0110118109500019",
+                    //     "descripcion" => "Piña",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118109500019-pina-de-costa-rica-pieza-18-kg-peso-aproximado/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60804,
                         "supermercado_id"=> $dia,
@@ -7701,15 +7701,15 @@ $p60901 = DB::table("productos")->where("name","Almendras crudas")->value("id");
                         "descripcion" => "Almendras crudas peladas",
                         "link" => "https://www.carrefour.es/supermercado/almendra-cruda-repelada-simpl-200-g/R-VC4AECOMM-104328/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60901,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120968401230____2__600x600.jpg",
-                        "peso" => 150,
-                        "scrab_id"=> "0110118003100304",
-                        "descripcion" => "Almendras crudas peladas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118003100304-el-corte-ingles-almendras-repeladas-crudas-bolsa-150-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60901,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120968401230____2__600x600.jpg",
+                    //     "peso" => 150,
+                    //     "scrab_id"=> "0110118003100304",
+                    //     "descripcion" => "Almendras crudas peladas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118003100304-el-corte-ingles-almendras-repeladas-crudas-bolsa-150-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60901,
                         "supermercado_id"=> $dia,
@@ -7757,15 +7757,15 @@ $p60902 = DB::table("productos")->where("name","Avellanas tostadas")->value("id"
                         "descripcion" => "Avellanas tostadas",
                         "link" => "https://www.carrefour.es/supermercado/avellana-tostada-sin-sal-carrefour-el-mercado-tarrina-de-225-g/R-prod1070735/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60902,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120969800364____2__600x600.jpg",
-                        "peso" => 150,
-                        "scrab_id"=> "0110118003200054",
-                        "descripcion" => "Avellanas tostadas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118003200054-el-corte-ingles-avellanas-tostadas-sin-gluten-bolsa-150-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60902,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120969800364____2__600x600.jpg",
+                    //     "peso" => 150,
+                    //     "scrab_id"=> "0110118003200054",
+                    //     "descripcion" => "Avellanas tostadas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118003200054-el-corte-ingles-avellanas-tostadas-sin-gluten-bolsa-150-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60902,
                         "supermercado_id"=> $dia,
@@ -7813,15 +7813,15 @@ $p60903 = DB::table("productos")->where("name","Cacahuetes fritos")->value("id")
                         "descripcion" => "Cacachuetes fritos pelados",
                         "link" => "https://www.carrefour.es/supermercado/cacahuetes-fritos-sin-sal-anadida-carrefour-200-g/R-VC4AECOMM-513752/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60903,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/08/00120952300943____2__600x600.jpg",
-                        "peso" => 150,
-                        "scrab_id"=> "0110118003000165",
-                        "descripcion" => "Cacachuetes fritos pelados",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118003000165-el-corte-ingles-cacahuetes-fritos-y-salados-sin-gluten-bolsa-150-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60903,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/08/00120952300943____2__600x600.jpg",
+                    //     "peso" => 150,
+                    //     "scrab_id"=> "0110118003000165",
+                    //     "descripcion" => "Cacachuetes fritos pelados",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118003000165-el-corte-ingles-cacahuetes-fritos-y-salados-sin-gluten-bolsa-150-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60903,
                         "supermercado_id"=> $dia,
@@ -7869,15 +7869,15 @@ $p60904 = DB::table("productos")->where("name","Pistachos tostados")->value("id"
                         "descripcion" => "Pistachos tostados",
                         "link" => "https://www.carrefour.es/supermercado/pistachos-tostados-y-saldaos-classic-carrefour-400-g/R-625334196/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60904,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120970200711____2__600x600.jpg",
-                        "peso" => 175,
-                        "scrab_id"=> "0110118003400167",
-                        "descripcion" => "Pistachos tostados",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118003400167-el-corte-ingles-pistachos-tostados-y-salados-sin-gluten-bolsa-175-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60904,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120970200711____2__600x600.jpg",
+                    //     "peso" => 175,
+                    //     "scrab_id"=> "0110118003400167",
+                    //     "descripcion" => "Pistachos tostados",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118003400167-el-corte-ingles-pistachos-tostados-y-salados-sin-gluten-bolsa-175-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60904,
                         "supermercado_id"=> $dia,
@@ -7925,15 +7925,15 @@ $p60905 = DB::table("productos")->where("name","Nueces peladas")->value("id");
                         "descripcion" => "Nueces sin cáscara",
                         "link" => "https://www.carrefour.es/supermercado/nueces-sin-cascara-carrefour-200-g/R-521003605/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p60905,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120968401230____2__600x600.jpg",
-                        "peso" => 150,
-                        "scrab_id"=> "0110118004100071",
-                        "descripcion" => "Nueces sin cáscara",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118003100304-el-corte-ingles-almendras-repeladas-crudas-bolsa-150-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p60905,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201808/16/00120968401230____2__600x600.jpg",
+                    //     "peso" => 150,
+                    //     "scrab_id"=> "0110118004100071",
+                    //     "descripcion" => "Nueces sin cáscara",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118003100304-el-corte-ingles-almendras-repeladas-crudas-bolsa-150-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p60905,
                         "supermercado_id"=> $dia,
@@ -7981,15 +7981,15 @@ $p70101 = DB::table("productos")->where("name","Acelgas")->value("id");
                         "descripcion" => "Acelgas manojo / bolsa",
                         "link" => "https://www.carrefour.es/supermercado/acelgas-manojo-de-800-g/R-521032289/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70101,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/28/00118166800674____1__600x600.jpg",
-                        "peso" => 750,
-                        "scrab_id"=> "0110118166800674",
-                        "descripcion" => "Acelgas manojo / bolsa",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118166800674-acelgas-manojo-750-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70101,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/28/00118166800674____1__600x600.jpg",
+                    //     "peso" => 750,
+                    //     "scrab_id"=> "0110118166800674",
+                    //     "descripcion" => "Acelgas manojo / bolsa",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118166800674-acelgas-manojo-750-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70101,
                         "supermercado_id"=> $dia,
@@ -8037,15 +8037,15 @@ $p70102 = DB::table("productos")->where("name","Ajos")->value("id");
                         "descripcion" => "Ajos blancos / morados",
                         "link" => "https://www.carrefour.es/supermercado/ajo-sprint-carrefour-malla-500-g/R-VC4AECOMM-076258/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70102,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201409/27/00118176102806____1__600x600.jpg",
-                        "peso" => 500,
-                        "scrab_id"=> "0110118176102806",
-                        "descripcion" => "Ajos blancos / morados",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118176102806-huerta-de-carabana-ajo-morado-bolsa-500-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70102,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201409/27/00118176102806____1__600x600.jpg",
+                    //     "peso" => 500,
+                    //     "scrab_id"=> "0110118176102806",
+                    //     "descripcion" => "Ajos blancos / morados",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118176102806-huerta-de-carabana-ajo-morado-bolsa-500-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70102,
                         "supermercado_id"=> $dia,
@@ -8093,15 +8093,15 @@ $p70103 = DB::table("productos")->where("name","Apio")->value("id");
                         "descripcion" => "Apio",
                         "link" => "https://www.carrefour.es/supermercado/apio-blanco-500-g/R-521032335/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70103,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118166800666____1__600x600.jpg",
-                        "peso" => 600,
-                        "scrab_id"=> "0110118166800666",
-                        "descripcion" => "Apio",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118166800666-apio-verde-manojo-600-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70103,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118166800666____1__600x600.jpg",
+                    //     "peso" => 600,
+                    //     "scrab_id"=> "0110118166800666",
+                    //     "descripcion" => "Apio",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118166800666-apio-verde-manojo-600-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70103,
                         "supermercado_id"=> $dia,
@@ -8149,15 +8149,15 @@ $p70104 = DB::table("productos")->where("name","Cebolla tubo")->value("id");
                         "descripcion" => "Cebolla blanca",
                         "link" => "https://www.carrefour.es/supermercado/cebolla-carrefour-1-kg/R-521032276/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70104,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202402/28/00118176100768____5__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118176100768",
-                        "descripcion" => "Cebolla blanca",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118176100768-cebolla-tradicional-buti-1-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70104,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202402/28/00118176100768____5__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118176100768",
+                    //     "descripcion" => "Cebolla blanca",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118176100768-cebolla-tradicional-buti-1-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70104,
                         "supermercado_id"=> $dia,
@@ -8205,15 +8205,15 @@ $p70105 = DB::table("productos")->where("name","Puerro")->value("id");
                         "descripcion" => "Puerros manojo / bandeja",
                         "link" => "https://www.carrefour.es/supermercado/puerro-circulo-de-calidad-500-g/R-prod223075/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70105,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/25/00118176102889____8__1200x1200.jpg",
-                        "peso" => 400,
-                        "scrab_id"=> "0110118176102889",
-                        "descripcion" => "Puerros manojo / bandeja",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118176102889-puerro-manojo-400-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70105,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/25/00118176102889____8__1200x1200.jpg",
+                    //     "peso" => 400,
+                    //     "scrab_id"=> "0110118176102889",
+                    //     "descripcion" => "Puerros manojo / bandeja",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118176102889-puerro-manojo-400-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70105,
                         "supermercado_id"=> $dia,
@@ -8261,15 +8261,15 @@ $p70106 = DB::table("productos")->where("name","Lechuga iceberg")->value("id");
                         "descripcion" => "Lechuga iceberg",
                         "link" => "https://www.carrefour.es/supermercado/lechuga-iceberg-carrefour-1-ud/R-fprod1190510/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70106,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202307/03/00118165302359____9__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118165302359",
-                        "descripcion" => "Lechuga iceberg",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118165302359-lechuga-iceberg-seleccion-1-unidad/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70106,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202307/03/00118165302359____9__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118165302359",
+                    //     "descripcion" => "Lechuga iceberg",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118165302359-lechuga-iceberg-seleccion-1-unidad/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70106,
                         "supermercado_id"=> $dia,
@@ -8318,15 +8318,15 @@ $p70107 = DB::table("productos")->where("name","Col lombarda")->value("id");
                         "descripcion" => NULL,
                         "link" => NULL,
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70107,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118120700069____7__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118120700069",
-                        "descripcion" => "Col lombarda",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118120700069-lombarda-pieza-1-kg-peso-aproximado/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70107,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118120700069____7__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118120700069",
+                    //     "descripcion" => "Col lombarda",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118120700069-lombarda-pieza-1-kg-peso-aproximado/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70107,
                         "supermercado_id"=> $dia,
@@ -8374,15 +8374,15 @@ $p70108 = DB::table("productos")->where("name","Zanahorias")->value("id");
                         "descripcion" => "Zanahorias bolsa",
                         "link" => "https://www.carrefour.es/supermercado/zanahoria-carrefour-1-kg/R-fprod1410012/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70108,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/19/00118176400028____16__1200x1200.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118176400028",
-                        "descripcion" => "Zanahorias bolsa TABUENCA",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118176400028-tabuenca-zanahoria-bolsa-1-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70108,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/19/00118176400028____16__1200x1200.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118176400028",
+                    //     "descripcion" => "Zanahorias bolsa TABUENCA",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118176400028-tabuenca-zanahoria-bolsa-1-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70108,
                         "supermercado_id"=> $dia,
@@ -8430,15 +8430,15 @@ $p70201 = DB::table("productos")->where("name","Tomate ensalada")->value("id");
                         "descripcion" => "Tomate ensalada",
                         "link" => "https://www.carrefour.es/supermercado/tomate-ensalada-1-kg-aprox/R-530067024/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70201,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118107600050____2__600x600.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118107600050",
-                        "descripcion" => "Tomate ensalada",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118107600050-tomate-ensalada-al-peso/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70201,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118107600050____2__600x600.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118107600050",
+                    //     "descripcion" => "Tomate ensalada",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118107600050-tomate-ensalada-al-peso/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70201,
                         "supermercado_id"=> $dia,
@@ -8486,15 +8486,15 @@ $p70202 = DB::table("productos")->where("name","Calabacin")->value("id");
                         "descripcion" => "Calabacin verde",
                         "link" => "https://www.carrefour.es/supermercado/calabacin-carrefour-a-granel-12-kg-aprox/R-VC4AECOMM-431967/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70202,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118109000010____2__600x600.jpg",
-                        "peso" => 250,
-                        "scrab_id"=> "0110118109000010",
-                        "descripcion" => "Calabacin verde",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118109000010-calabacin-al-peso-peso-aproximado-de-la-unidad-250-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70202,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118109000010____2__600x600.jpg",
+                    //     "peso" => 250,
+                    //     "scrab_id"=> "0110118109000010",
+                    //     "descripcion" => "Calabacin verde",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118109000010-calabacin-al-peso-peso-aproximado-de-la-unidad-250-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70202,
                         "supermercado_id"=> $dia,
@@ -8542,15 +8542,15 @@ $p70203 = DB::table("productos")->where("name","Calabaza")->value("id");
                         "descripcion" => "Calabaza cacahuete",
                         "link" => "https://www.carrefour.es/supermercado/calabaza-sepallo-carrefour-2-kg-aprox/R-VC4AECOMM-462664/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70203,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/27/00118165600869____1__1200x1200.jpg",
-                        "peso" => 800,
-                        "scrab_id"=> "0110118165600869",
-                        "descripcion" => "Calabaza cacahuete",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118165600869-peris-calabaza-cacahuete-pieza-800-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70203,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201911/27/00118165600869____1__1200x1200.jpg",
+                    //     "peso" => 800,
+                    //     "scrab_id"=> "0110118165600869",
+                    //     "descripcion" => "Calabaza cacahuete",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118165600869-peris-calabaza-cacahuete-pieza-800-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70203,
                         "supermercado_id"=> $dia,
@@ -8598,15 +8598,15 @@ $p70204 = DB::table("productos")->where("name","Pepino")->value("id");
                         "descripcion" => "Pepino",
                         "link" => "https://www.carrefour.es/supermercado/pepino-carrefour-a-granel-1-kg-aprox/R-VC4AECOMM-451456/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70204,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118109100018____2__600x600.jpg",
-                        "peso" => 250,
-                        "scrab_id"=> "0110118109100018",
-                        "descripcion" => "Pepino",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118109100018-pepino-al-peso-peso-aproximado-de-la-unidad-250-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70204,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118109100018____2__600x600.jpg",
+                    //     "peso" => 250,
+                    //     "scrab_id"=> "0110118109100018",
+                    //     "descripcion" => "Pepino",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118109100018-pepino-al-peso-peso-aproximado-de-la-unidad-250-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70204,
                         "supermercado_id"=> $dia,
@@ -8659,15 +8659,15 @@ $p70205 = DB::table("productos")->where("name","Pimiento verde freir")->value("i
                         // "descripcion" => "Pimiento verde",
                         // "link" => "https://www.carrefour.es/supermercado/pimiento-verde-italiano-1-kg-aprox/R-536001616/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70205,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118107400063____1__600x600.jpg",
-                        "peso" => 100,
-                        "scrab_id"=> "0110118107400063",
-                        "descripcion" => "Pimiento verde",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118107400063-pimiento-verde-de-freir-al-peso-peso-aproximado-de-la-unidad-100-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70205,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201811/26/00118107400063____1__600x600.jpg",
+                    //     "peso" => 100,
+                    //     "scrab_id"=> "0110118107400063",
+                    //     "descripcion" => "Pimiento verde",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118107400063-pimiento-verde-de-freir-al-peso-peso-aproximado-de-la-unidad-100-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70205,
                         "supermercado_id"=> $dia,
@@ -8715,15 +8715,15 @@ $p70301 = DB::table("productos")->where("name","Champiñones")->value("id");
                         "descripcion" => "Champiñon blanco entero",
                         "link" => "https://www.carrefour.es/supermercado/champinon-pie-cortado-carrefour-600-g-aprox/R-fprod1220135/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70301,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201804/24/00118165800816____6__600x600.jpg",
-                        "peso" => 450,
-                        "scrab_id"=> "0110118165800816",
-                        "descripcion" => "Champiñon blanco entero DELICHAMP",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118165800816-delichamp-champinon-cultivado-entero-pie-cortado-bandeja-450-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70301,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201804/24/00118165800816____6__600x600.jpg",
+                    //     "peso" => 450,
+                    //     "scrab_id"=> "0110118165800816",
+                    //     "descripcion" => "Champiñon blanco entero DELICHAMP",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118165800816-delichamp-champinon-cultivado-entero-pie-cortado-bandeja-450-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70301,
                         "supermercado_id"=> $dia,
@@ -8771,15 +8771,15 @@ $p70302 = DB::table("productos")->where("name","Setas")->value("id");
                         "descripcion" => "Seta ostra",
                         "link" => "https://www.carrefour.es/supermercado/seta-carrefour-250-g-aprox/R-fprod1220121/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70302,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/24/00118165801657____4__1200x1200.jpg",
-                        "peso" => 200,
-                        "scrab_id"=> "0110118165801657",
-                        "descripcion" => "Seta ostra",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118165801657-setas-de-cultivo-bandeja-200-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70302,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202301/24/00118165801657____4__1200x1200.jpg",
+                    //     "peso" => 200,
+                    //     "scrab_id"=> "0110118165801657",
+                    //     "descripcion" => "Seta ostra",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118165801657-setas-de-cultivo-bandeja-200-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70302,
                         "supermercado_id"=> $dia,
@@ -8827,15 +8827,15 @@ $p70401 = DB::table("productos")->where("name","Alubia blanca")->value("id");
                         "descripcion" => "Alubia blanca seca",
                         "link" => "https://www.carrefour.es/supermercado/alubia-blanca-categoria-extra-carrefour-1-kg/R-740822685/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70401,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/21/00118006301610____3__1200x1200.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118006301610",
-                        "descripcion" => "Alubia blanca seca",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118006301610-el-corte-ingles-alubia-blanca-extra-paquete-1-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70401,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/21/00118006301610____3__1200x1200.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118006301610",
+                    //     "descripcion" => "Alubia blanca seca",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118006301610-el-corte-ingles-alubia-blanca-extra-paquete-1-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70401,
                         "supermercado_id"=> $dia,
@@ -8888,15 +8888,15 @@ $p70402 = DB::table("productos")->where("name","Garbanzos")->value("id");
                         "descripcion" => "Garbanzo seco cat. Extra",
                         "link" => "https://www.carrefour.es/supermercado/garbanzo-categoria-extra-carrefour-1-kg/R-536500289/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70402,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/15/00118008200844____2__1200x1200.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118008200844",
-                        "descripcion" => "Garbanzo seco cat. Extra",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118008200844-el-corte-ingles-garbanzo-castellano-extra-envase-1-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70402,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/15/00118008200844____2__1200x1200.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118008200844",
+                    //     "descripcion" => "Garbanzo seco cat. Extra",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118008200844-el-corte-ingles-garbanzo-castellano-extra-envase-1-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70402,
                         "supermercado_id"=> $dia,
@@ -8944,15 +8944,15 @@ $p70403 = DB::table("productos")->where("name","Lentejas")->value("id");
                         "descripcion" => "Lenteja seca",
                         "link" => "https://www.carrefour.es/supermercado/lenteja-categoria-extra-carrefour-1-kg/R-536500291/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70403,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/15/00118007700794____2__1200x1200.jpg",
-                        "peso" => 1000,
-                        "scrab_id"=> "0110118007701198",
-                        "descripcion" => "Lenteja seca",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118007700794-el-corte-ingles-lenteja-castellana-extra-paquete-1-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70403,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/15/00118007700794____2__1200x1200.jpg",
+                    //     "peso" => 1000,
+                    //     "scrab_id"=> "0110118007701198",
+                    //     "descripcion" => "Lenteja seca",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118007700794-el-corte-ingles-lenteja-castellana-extra-paquete-1-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70403,
                         "supermercado_id"=> $dia,
@@ -9000,15 +9000,15 @@ $p70501 = DB::table("productos")->where("name","Alcachofa troceada")->value("id"
                         "descripcion" => "Corazones de alcachofa",
                         "link" => "https://www.carrefour.es/supermercado/corazones-de-alcachofa-8-10-carrefour-240-g/R-521016439/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70501,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201609/22/00118021800737____1__600x600.jpg",
-                        "peso" => 240,
-                        "scrab_id"=> "0110118021800737",
-                        "descripcion" => "Corazones de alcachofa",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118021800737-el-corte-ingles-corazones-de-alcachofas-al-natural-6-8-piezas-lata-240-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70501,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201609/22/00118021800737____1__600x600.jpg",
+                    //     "peso" => 240,
+                    //     "scrab_id"=> "0110118021800737",
+                    //     "descripcion" => "Corazones de alcachofa",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118021800737-el-corte-ingles-corazones-de-alcachofas-al-natural-6-8-piezas-lata-240-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70501,
                         "supermercado_id"=> $dia,
@@ -9056,15 +9056,15 @@ $p70502 = DB::table("productos")->where("name","Alubias en bote")->value("id");
                         "descripcion" => "Alubia blanca cocida",
                         "link" => "https://www.carrefour.es/supermercado/alubias-cocidas-categoria-extra-carrefour-400-g/R-521005493/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70502,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/22/00118007300652____3__1200x1200.jpg",
-                        "peso" => 400,
-                        "scrab_id"=> "0110118007300652",
-                        "descripcion" => "Alubia blanca cocida",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118007300652-el-corte-ingles-alubia-blanca-extra-cocida-frasco-400-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70502,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202109/22/00118007300652____3__1200x1200.jpg",
+                    //     "peso" => 400,
+                    //     "scrab_id"=> "0110118007300652",
+                    //     "descripcion" => "Alubia blanca cocida",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118007300652-el-corte-ingles-alubia-blanca-extra-cocida-frasco-400-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70502,
                         "supermercado_id"=> $dia,
@@ -9112,15 +9112,15 @@ $p70503 = DB::table("productos")->where("name","Champiñon laminado")->value("id
                         "descripcion" => "Champiñones laminados lata",
                         "link" => "https://www.carrefour.es/supermercado/champinones-laminados-carrefour-230-g/R-521005928/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70503,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201711/03/00118022300786____1__600x600.jpg",
-                        "peso" => 185,
-                        "scrab_id"=> "0110118022300786",
-                        "descripcion" => "Champiñones laminados lata",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118022300786-el-corte-ingles-champinon-laminado-lata-185-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70503,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201711/03/00118022300786____1__600x600.jpg",
+                    //     "peso" => 185,
+                    //     "scrab_id"=> "0110118022300786",
+                    //     "descripcion" => "Champiñones laminados lata",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118022300786-el-corte-ingles-champinon-laminado-lata-185-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70503,
                         "supermercado_id"=> $dia,
@@ -9168,15 +9168,15 @@ $p70504 = DB::table("productos")->where("name","Esparragos")->value("id");
                         "descripcion" => "Espárragos blancos",
                         "link" => "https://www.carrefour.es/supermercado/esparragos-blancos-gruesos-6-12-carrefour-325-g/R-fprod1460151/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70504,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/15/00118023703053____2__1200x1200.jpg",
-                        "peso" => 110,
-                        "scrab_id"=> "0110118023703053",
-                        "descripcion" => "Espárragos blancos",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118023703053-el-corte-ingles-esparragos-blancos-cortos-medianos-frasco-110-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70504,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202110/15/00118023703053____2__1200x1200.jpg",
+                    //     "peso" => 110,
+                    //     "scrab_id"=> "0110118023703053",
+                    //     "descripcion" => "Espárragos blancos",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118023703053-el-corte-ingles-esparragos-blancos-cortos-medianos-frasco-110-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70504,
                         "supermercado_id"=> $dia,
@@ -9224,15 +9224,15 @@ $p70505 = DB::table("productos")->where("name","Garbanzo cocido")->value("id");
                         "descripcion" => "Garganzos cocidos",
                         "link" => "https://www.carrefour.es/supermercado/garbanzos-cocidos-categoria-extra-carrefour-400-g/R-521005495/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70505,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202108/19/00118007000799____3__1200x1200.jpg",
-                        "peso" => 400,
-                        "scrab_id"=> "0110118007000799",
-                        "descripcion" => "Garganzos cocidos",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118007000799-el-corte-ingles-garbanzo-cocido-extra-frasco-570-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70505,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202108/19/00118007000799____3__1200x1200.jpg",
+                    //     "peso" => 400,
+                    //     "scrab_id"=> "0110118007000799",
+                    //     "descripcion" => "Garganzos cocidos",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118007000799-el-corte-ingles-garbanzo-cocido-extra-frasco-570-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70505,
                         "supermercado_id"=> $dia,
@@ -9280,15 +9280,15 @@ $p70506 = DB::table("productos")->where("name","Guisantes frescos")->value("id")
                         "descripcion" => "Guisantes al natural",
                         "link" => "https://www.carrefour.es/supermercado/guisantes-muy-finos-classic-carrefour-250-g/R-758904356/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70506,
-                        "supermercado_id"=> $eci,
-                        "img_url"=> "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/29/00118024200463____4__1200x1200.jpg",
-                        "peso" => 250,
-                        "scrab_id"=> "0110118024200463",
-                        "descripcion" => "Guisantes al natural",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118024200463-el-corte-ingles-guisantes-al-natural-medianos-lata-250-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70506,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url"=> "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/29/00118024200463____4__1200x1200.jpg",
+                    //     "peso" => 250,
+                    //     "scrab_id"=> "0110118024200463",
+                    //     "descripcion" => "Guisantes al natural",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118024200463-el-corte-ingles-guisantes-al-natural-medianos-lata-250-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70506,
                         "supermercado_id"=> $dia,
@@ -9336,15 +9336,15 @@ $p70507 = DB::table("productos")->where("name","Judía verde troceada")->value("
                         "descripcion" => "Judia verde troceada",
                         "link" => "https://www.carrefour.es/supermercado/judias-verdes-planas-cortadas-carrefour-360-g/R-521005920/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70507,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/17/00118042100364____2__1200x1200.jpg",
-                        "peso" => 360,
-                        "scrab_id"=> "0110118042100364",
-                        "descripcion" => "Judia verde troceada",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118042100364-el-corte-ingles-judias-verdes-anchas-extra-cortadas-en-trozos-medianos-frasco-360-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70507,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/17/00118042100364____2__1200x1200.jpg",
+                    //     "peso" => 360,
+                    //     "scrab_id"=> "0110118042100364",
+                    //     "descripcion" => "Judia verde troceada",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118042100364-el-corte-ingles-judias-verdes-anchas-extra-cortadas-en-trozos-medianos-frasco-360-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70507,
                         "supermercado_id"=> $dia,
@@ -9392,15 +9392,15 @@ $p70508 = DB::table("productos")->where("name","Maiz dulce")->value("id");
                         "descripcion" => "Maiz dulce CIDACOS",
                         "link" => "https://www.carrefour.es/supermercado/maiz-dulce-cidacos-sin-lactosa-pack-de-3-unidades-de-140-g/R-VC4AECOMM-553244/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70508,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/29/00118049700042____8__1200x1200.jpg",
-                        "peso" => 285,
-                        "scrab_id"=> "0110118049700042",
-                        "descripcion" => "Maiz dulce",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118049700042-el-corte-ingles-maiz-dulce-en-grano-lata-285-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70508,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/29/00118049700042____8__1200x1200.jpg",
+                    //     "peso" => 285,
+                    //     "scrab_id"=> "0110118049700042",
+                    //     "descripcion" => "Maiz dulce",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118049700042-el-corte-ingles-maiz-dulce-en-grano-lata-285-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70508,
                         "supermercado_id"=> $dia,
@@ -9448,15 +9448,15 @@ $p70509 = DB::table("productos")->where("name","Tomate entero pelado")->value("i
                         "descripcion" => "Tomate entero pelado",
                         "link" => "https://www.carrefour.es/supermercado/tomates-enteros-contenido-bajo-de-sal-carrefour-240-g/R-641402267/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70509,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/01/00118027500737____2__1200x1200.jpg",
-                        "peso" => 480,
-                        "scrab_id"=> "0110118027500737",
-                        "descripcion" => "Tomate entero pelado",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118027500737-el-corte-ingles-tomate-entero-pelado-lata-480-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70509,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202111/01/00118027500737____2__1200x1200.jpg",
+                    //     "peso" => 480,
+                    //     "scrab_id"=> "0110118027500737",
+                    //     "descripcion" => "Tomate entero pelado",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118027500737-el-corte-ingles-tomate-entero-pelado-lata-480-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70509,
                         "supermercado_id"=> $dia,
@@ -9504,15 +9504,15 @@ $p70510 = DB::table("productos")->where("name","Tomate triturado")->value("id");
                         "descripcion" => "Tomate triturado",
                         "link" => "https://www.carrefour.es/supermercado/tomate-triturado-carrefour-lata-de-390-g/R-fprod1190604/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70510,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202102/09/00118027500729____5__1200x1200.jpg",
-                        "peso" => 400,
-                        "scrab_id"=> "0110118027500729",
-                        "descripcion" => "Tomate triturado",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118027500729-el-corte-ingles-tomate-extra-triturado-lata-400-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70510,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202102/09/00118027500729____5__1200x1200.jpg",
+                    //     "peso" => 400,
+                    //     "scrab_id"=> "0110118027500729",
+                    //     "descripcion" => "Tomate triturado",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118027500729-el-corte-ingles-tomate-extra-triturado-lata-400-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70510,
                         "supermercado_id"=> $dia,
@@ -9560,15 +9560,15 @@ $p70511 = DB::table("productos")->where("name","Tomate frito tarro")->value("id"
                         "descripcion" => "Tomate frito tarro",
                         "link" => "https://www.carrefour.es/supermercado/tomate-frito-carrefour-tarro-550-g/R-600805291/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70511,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202201/21/00118043502089____3__1200x1200.jpg",
-                        "peso" => 550,
-                        "scrab_id"=> "0110118043502089",
-                        "descripcion" => "Tomate frito tarro",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118043502089-el-corte-ingles-tomate-frito-sin-gluten-frasco-550-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70511,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202201/21/00118043502089____3__1200x1200.jpg",
+                    //     "peso" => 550,
+                    //     "scrab_id"=> "0110118043502089",
+                    //     "descripcion" => "Tomate frito tarro",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118043502089-el-corte-ingles-tomate-frito-sin-gluten-frasco-550-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70511,
                         "supermercado_id"=> $dia,
@@ -9616,15 +9616,15 @@ $p70512 = DB::table("productos")->where("name","Zanahoria rallada")->value("id")
                         "descripcion" => "Zanahoria rallada",
                         "link" => "https://www.carrefour.es/supermercado/zanahoria-en-tiras-classic-carrefour-250-g/R-VC4AECOMM-705230/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70512,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201612/15/00118025601016____1__600x600.jpg",
-                        "peso" => 250,
-                        "scrab_id"=> "0110118025601016",
-                        "descripcion" => "Zanahoria rallada",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118025601016-el-corte-ingles-zanahoria-rallada-en-hilos-frasco-250-g-neto-escurrido/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70512,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201612/15/00118025601016____1__600x600.jpg",
+                    //     "peso" => 250,
+                    //     "scrab_id"=> "0110118025601016",
+                    //     "descripcion" => "Zanahoria rallada",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118025601016-el-corte-ingles-zanahoria-rallada-en-hilos-frasco-250-g-neto-escurrido/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70512,
                         "supermercado_id"=> $dia,
@@ -9672,15 +9672,15 @@ $p70601 = DB::table("productos")->where("name","Patatas freir malla")->value("id
                         "descripcion" => "Malla de patatas",
                         "link" => "https://www.carrefour.es/supermercado/patata-para-freir-carrefour-3-kg/R-600709206/p",
                     ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p70601,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202202/09/00118176302935____4__600x600.jpg",
-                        "peso" => 3000,
-                        "scrab_id"=> "0110118176302935",
-                        "descripcion" => "Malla de patatas",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110118176302935-el-corte-ingles-patata-de-freir-bolsa-3-kg/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p70601,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202202/09/00118176302935____4__600x600.jpg",
+                    //     "peso" => 3000,
+                    //     "scrab_id"=> "0110118176302935",
+                    //     "descripcion" => "Malla de patatas",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110118176302935-el-corte-ingles-patata-de-freir-bolsa-3-kg/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p70601,
                         "supermercado_id"=> $dia,
@@ -9728,15 +9728,15 @@ $p80101 = DB::table("productos")->where("name","Azucar blanco")->value("id");
                         "descripcion" => "Azucar blanco",
                         "link" => "https://www.carrefour.es/supermercado/azucar-blanco-carrefour-1-kg/R-VC4AECOMM-463155/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p80101,
-                        "supermercado_id"=> $eci,
-                        "img_url" => NULL,
-                        "peso" => NULL,
-                        "scrab_id"=> NULL,
-                        "descripcion" => NULL,
-                        "link" => NULL
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p80101,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => NULL,
+                    //     "peso" => NULL,
+                    //     "scrab_id"=> NULL,
+                    //     "descripcion" => NULL,
+                    //     "link" => NULL
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p80101,
                         "supermercado_id"=> $dia,
@@ -9784,15 +9784,15 @@ $p80201 = DB::table("productos")->where("name","Miel de flores")->value("id");
                         "descripcion" => "Miel de flores",
                         "link" => "https://www.carrefour.es/supermercado/miel-de-flores-carrefour-classic-500-g/R-521003512/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p80201,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202104/15/00120640201511____3__1200x1200.jpg",
-                        "peso" => 500,
-                        "scrab_id"=> "0110120640201511",
-                        "descripcion" => "Miel de flores",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110120640201511-el-corte-ingles-miel-de-flores-bote-500-g-antigoteo/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p80201,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202104/15/00120640201511____3__1200x1200.jpg",
+                    //     "peso" => 500,
+                    //     "scrab_id"=> "0110120640201511",
+                    //     "descripcion" => "Miel de flores",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110120640201511-el-corte-ingles-miel-de-flores-bote-500-g-antigoteo/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p80201,
                         "supermercado_id"=> $dia,
@@ -9840,15 +9840,15 @@ $p80301 = DB::table("productos")->where("name","Cafe molido Natural")->value("id
                         "descripcion" => "Café molido natural",
                         "link" => "https://www.carrefour.es/supermercado/cafe-molido-natural-carrefour-500-g/R-fprod1280764/p",
                         ]);
-                    DB::table("supermercadoproductos")->insert([
-                        "producto_id"=> $p80301,
-                        "supermercado_id"=> $eci,
-                        "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/22/00120603901941____2__1200x1200.jpg",
-                        "peso" => 250,
-                        "scrab_id"=> "0110120603901941",
-                        "descripcion" => "Café molido natural",
-                        "link" => "https://www.elcorteingles.es/supermercado/0110120603901941-el-corte-ingles-cafe-molido-tostado-natural-paquete-250-g/",
-                        ]);
+                    // DB::table("supermercadoproductos")->insert([
+                    //     "producto_id"=> $p80301,
+                    //     "supermercado_id"=> $eci,
+                    //     "img_url" => "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202112/22/00120603901941____2__1200x1200.jpg",
+                    //     "peso" => 250,
+                    //     "scrab_id"=> "0110120603901941",
+                    //     "descripcion" => "Café molido natural",
+                    //     "link" => "https://www.elcorteingles.es/supermercado/0110120603901941-el-corte-ingles-cafe-molido-tostado-natural-paquete-250-g/",
+                    //     ]);
                     DB::table("supermercadoproductos")->insert([
                         "producto_id"=> $p80301,
                         "supermercado_id"=> $dia,

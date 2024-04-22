@@ -24,10 +24,10 @@ class SupermercadoSeeder extends Seeder
             "name"=> "Carrefour",
             "logo_url" => ""
         ]);
-        DB::table("Supermercados")->insert([
-            "name"=> "El Corte Inglés",
-            "logo_url" => ""
-        ]);
+        // DB::table("Supermercados")->insert([
+        //     "name"=> "El Corte Inglés",
+        //     "logo_url" => ""
+        // ]);
         DB::table("Supermercados")->insert([
             "name"=> "Día",
             "logo_url" => ""

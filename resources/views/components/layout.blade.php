@@ -6,6 +6,7 @@
 
     <title>MegaAhorro</title>
 
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +25,10 @@
         </div>
         <div class="w-1/2 flex justify-end px-2">
             <div class="w-1/2 py-2 flex justify-center">
-                <button onclick="mostrarOcultar()" type="button">
+                {{-- <button onclick="mostrarOcultar()" type="button">
                     <img src="../img/icons/MagnifyingGlassCircle.svg" alt="MegaAhorro search" width="48" height="48">
 
-                </button>
+                </button> --}}
             </div>
 
             <div class="w-1/2 py-2 flex justify-center ">
@@ -41,8 +42,8 @@
                             <div class="overlay-content">
                               <a href="/noticias">Noticias</a>
                               <a href="/categorias">Precios</a>
-                              <a href="nosotros.html">Nosotros</a>
-                              <a href="contacto.html">Contacto</a>
+                              <a href="/nosotros">Nosotros</a>
+                              <a href="/contacto">Contacto</a>
                             </div>
                         </div>
                 </div>

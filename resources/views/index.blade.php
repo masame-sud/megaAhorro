@@ -7,7 +7,7 @@
 
 <main class="container">
     <!-- slider -->
-    <x-slider />
+    {{-- <x-slider /> --}}
 
 
      <!-- grid noticias principal -->
@@ -22,13 +22,13 @@
                 </a>
             </h2>
 
-                <x-noticia-main-card :noticia="$noticias[0]"/>
+                <x-noticia-main-card :noticia="$noticiasIndex[0]"/>
                  <!-- grid subnoticias -->
-            <section class="flex gap-2 p-1">
+            <section class="flex p-1">
 
-                <x-noticia-card :noticia="$noticias[1]"/>
+                <x-noticia-card :noticia="$noticiasIndex[1]"/>
                     <!-- subnoticia 2 -->
-                <x-noticia-card :noticia="$noticias[2]"/>
+                <x-noticia-card :noticia="$noticiasIndex[2]"/>
 
 
             </section>
