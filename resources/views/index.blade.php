@@ -17,7 +17,7 @@
 
 
             <h2 class="text-center font-semibold border border-black">
-                <a href="/noticias">
+                <a href="{{route('noticias')}}">
                     Últimas Noticias
                 </a>
             </h2>

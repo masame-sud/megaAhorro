@@ -27,24 +27,25 @@ Route::get('/', function () {
     // 'noticiasIndex' => Noticia::all()->sortByDesc('id')->values(),
     $noticiasIndex = Noticia::latest()->get();
     return view('index')->with('noticiasIndex', $noticiasIndex);
-});
+})->name('index');
 
-Route::view ('/nosotros', 'nosotros');
+Route::view ('/nosotros', 'nosotros')->name('nosotros');
+Route::view ('/colabora', 'colabora')->name('colabora');
 
-Route::resource('contacto', FormcontactoController::class);
+Route::resource('/contacto', FormcontactoController::class);
 
 Route::get('/noticias', function () {
 
     $noticias = Noticia::with("producto")->latest()->simplePaginate(6);
 
     return view('noticias')->with('noticias', $noticias);
-});
+})->name('noticias');
 
 Route::get('/noticias/{noticia}', function (Noticia $noticia) {
     return view('noticia', [
         'noticia' => $noticia,
     ]);
-});
+})->name('noticia');
 
 Route::get('/categorias', [SupermercadoproductoController::class, 'categorias'])->name('categorias');
 
@@ -57,7 +58,7 @@ Route::get('/categorias/{categoria}', [SupermercadoproductoController::class, 'c
 //     ]);
 // });
 
-Route::get('/subcategorias/{id}', [SupermercadoproductoController::class, 'subcategoria']);
+Route::get('/subcategorias/{id}', [SupermercadoproductoController::class, 'subcategoria'])->name('subcategorias/{id}');
 
 // Route::get('/productos/{subcategoria}', function (Subcategoria $subcategoria) {
 //     return view ('productos', [
@@ -67,7 +68,7 @@ Route::get('/subcategorias/{id}', [SupermercadoproductoController::class, 'subca
 //     ]);
 // } );
 
-Route::get ('/producto/{producto}', [SupermercadoproductoController::class, 'producto']);
+Route::get ('/producto/{producto}', [SupermercadoproductoController::class, 'producto'])->name('producto/{producto}');
 
 // Route::get('/producto/{producto}', function (Producto $producto) {
 //     return view ('producto', [

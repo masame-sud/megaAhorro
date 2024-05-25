@@ -8,7 +8,7 @@
     <header class="text-center flex flex-col gap-2 pb-4">
 
         <h1>
-            <a href="/categorias">
+            <a href="{{route('index')}}/categorias">
                 <span class="font-bold text-2xl">
                     {{ $subcategoria[0]->categoria->name }}
                 </span>

@@ -43,8 +43,15 @@ class SupermercadoproductoController extends Controller
         $noticias = Noticia::where('producto_id', $suppro[0]->producto_id)->paginate(3);
         $supermercadoproductos = Supermercadoproducto::with(["precio", "supermercado", "producto", ])->where('producto_id', $id)->get();
 
+        // $ayer = now()->subDays(1);
+        // $semana = now()->subDays(7);
+        // $precios = $supermercadoproductos->precio;
+        // $preciosAyer = $precios->where('created_at', '<', $ayer)->sortBy('created_at')->last();
+        // $preciosSemana = $precios->where('created_at', '<', $semana)->sortBy('created_at')->last();
+
 
         return view('producto')->with('suppro', $suppro)->with('producto', $producto)
         ->with('supermercadoproductos', $supermercadoproductos)->with('noticias', $noticias);
+        // ->with(['preciosAyer'=> $preciosAyer, 'preciosSemana'=> $preciosSemana]);
     }
 }

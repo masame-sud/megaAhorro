@@ -5,7 +5,7 @@
 
 <header class="text-center flex flex-col gap-2 pb-4">
     <h1 class="font-bold text-2xl">
-        <a href="/noticias">
+        <a href="{{route('noticias')}}">
             <span class="text-xs">volver a</span>
             Noticias
         </a>
@@ -36,14 +36,14 @@
 
 
             <section class="flex justify-between p-3">
-                <a href="/producto/{{$noticia->producto->id}}">
+                <a href="{{route('index')}}/producto/{{$noticia->producto->id}}">
                     <div class="p-1 productoBoton text-white rounded-3xl border border">
                         {{ $noticia->producto->name }}
                     </div>
                 </a>
                 <div class="text-xs font-light content-center">Publicado
                     @php $date=$noticia->published_at;  @endphp
-                        {{  \Carbon\Carbon::parse($date)->diffForHumans()}}
+                        {{  \Carbon\Carbon::parse($date)->locale('es')->diffForHumans()}}
                 </div>
 
 

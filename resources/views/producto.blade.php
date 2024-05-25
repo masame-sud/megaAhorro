@@ -9,13 +9,13 @@
 {{-- /categorias/5 --}}
 
         <h1>
-            <a href="/categorias/{{$producto[0]->subcategoria->categoria->id}}">
+            <a href="{{route('index')}}/categorias/{{$producto[0]->subcategoria->categoria->id}}">
                 <span class="font-bold text-2xl">
                     {{ $producto[0]->subcategoria->categoria->name }}
                 </span>
             </a>
              /
-            <a href="/subcategorias/{{$producto[0]->subcategoria->id}}">
+            <a href="{{route('index')}}/subcategorias/{{$producto[0]->subcategoria->id}}">
                 <span class="font-bold text-2xl">
                     {{$producto[0]->subcategoria->name}}
                 </span>
@@ -63,6 +63,13 @@
 
                     @foreach ($supermercadoproductos as $item)
 
+                    {{-- @php
+                    $ayer = now()->subDays(1);
+                    $semana = now()->subDays(7);
+                    $preciosAyer = $item->precio->where('created_at', '<', $ayer)->sortBy('created_at')->last();
+                    $preciosSemana = $item->precio->where('created_at', '<', $semana)->sortBy('created_at')->last();
+                 @endphp --}}
+                 {{-- @dd($item->precio->sortByDesc('created_at')->skip(1)->first()->precio_kg) --}}
 
                     @if (($item->scrab_id) AND ($item->precio->last() != NULL))
                     <tr class="text-center">
@@ -83,17 +90,23 @@
                         </td>
                         <td class=" p-1 border border-slate-500">
                             <p class="text-xs">
-                                {{$item->precio->last()->precio}}
+                                <a href="javascript: void(0);" onclick="toggle('panel{{$item->supermercado_id}}')">
+                                    {{$item->precio->last()->precio}}
+                                </a>
                             </p>
                         </td>
                         <td class=" p-1 border border-slate-500">
                             <p class="text-xs">
-                                {{$item->precio->last()->precio_kg}}
+                                <a href="javascript: void(0);" onclick="toggle('panel{{$item->supermercado_id}}')">
+                                    {{$item->precio->last()->precio_kg}}
+                                </a>
                             </p>
                         </td>
                         <td class=" p-1 border border-slate-500">
                             <p class="text-xs">
-                                {{$item->precio->last()->created_at->diffForHumans()}}
+                                <a href="javascript: void(0);" onclick="toggle('panel{{$item->supermercado_id}}')">
+                                    {{$item->precio->last()->created_at->diffForHumans()}}
+                                </a>
                             </p>
                         </td>
                     </tr>
@@ -105,30 +118,28 @@
                                 class="" />
                                 <div class="py-6">
 
+
                                     <div class="flex justify-around text-sm text-white productoBoton mb-2">
                                         <p>Hace</p>
                                         <p>Precio</p>
                                     </div>
                                     <div class="flex justify-between px-3 text-sm">
                                         <p>1 día</p>
-                                        <p>1.30 €</p>
+                                        <p>
+                                            {{$item->precio->sortByDesc('created_at')->skip(1)->first()->precio_kg}}
+                                            €
+                                        </p>
                                     </div>
+                                    @if (isset($item->precio->sortByDesc('created_at')->skip(7)->first()->precio_kg))
                                     <div class="flex justify-between px-3 text-sm">
                                         <p>7 días</p>
-                                        <p>1.30 €</p>
+                                        <p>
+                                            {{$item->precio->sortByDesc('created_at')->skip(7)->first()->precio_kg}}
+                                           €</p>
                                     </div>
-                                    <div class="flex justify-between px-3 text-sm">
-                                        <p>1 mes</p>
-                                        <p>1.30 €</p>
-                                    </div>
-                                    <div class="flex justify-between px-3 text-sm">
-                                        <p>6 meses</p>
-                                        <p>1.30 €</p>
-                                    </div>
-                                    <div class="flex justify-between px-3 text-sm">
-                                        <p>1 año</p>
-                                        <p>1.30 €</p>
-                                    </div>
+                                    @endif
+
+
 
                                 </div>
                             </div>
@@ -149,37 +160,39 @@
         </article>
 
     </section>
+            @if ($noticias->count() > 1)
+                               <!-- noticias anteriores -->
+                               <section class="flex flex-col p-2 gap-2">
 
-                <!-- noticias anteriores -->
-                <section class="flex flex-col p-2 gap-2">
+                                <!-- titulo del grid -->
+                                <h2 class="text-center font-semibold border border-black">
+                                 Noticias relacionadas
+                                </h2>
+                                    @if ($noticias[0])
+                                     <x-noticia-old-card :noticia="$noticias[0]"/>
 
-                    <!-- titulo del grid -->
-                    <h2 class="text-center font-semibold border border-black">
-                     Noticias relacionadas
-                    </h2>
-                        @if ($noticias[0])
-                         <x-noticia-old-card :noticia="$noticias[0]"/>
+                                   @endif
 
-                       @endif
+                                   @if ($noticias[1])
+                                    <x-noticia-old-card :noticia="$noticias[1]"/>
 
-                       @if ($noticias[1])
-                        <x-noticia-old-card :noticia="$noticias[1]"/>
-
-                        @endif
-
-
-                        @if ($noticias[2])
-                            <x-noticia-old-card :noticia="$noticias[2]"/>
-                        @endif
+                                    @endif
 
 
+                                    @if ($noticias[2])
+                                        <x-noticia-old-card :noticia="$noticias[2]"/>
+                                    @endif
 
 
 
-                </section>
-                {{$noticias->links()}}
 
-            </section>
+
+                            </section>
+                            {{$noticias->links()}}
+
+                        </section>
+            @endif
+
 
     </main>
 

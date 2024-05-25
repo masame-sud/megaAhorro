@@ -7,7 +7,7 @@
 
     <header class="text-center flex flex-col gap-2 pb-4">
 
-        <a href="/categorias">
+        <a href="{{route('index')}}/categorias">
 
             <h1 class="font-bold text-2xl">
                 <span class="text-xs">Volver de</span>

@@ -8,13 +8,10 @@ use App\Models\Supermercadoproducto;
 
 function getPage ($url)
 {
-
-
     $useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.89 Safari/537.36';
     $timeout= 120;
     $dir            = dirname(__FILE__);
     $cookie_file    = $dir . '/cookies/' . md5($_SERVER['REMOTE_ADDR']) . '.txt';
-
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_FAILONERROR, true);
     curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -39,7 +36,6 @@ function getPage ($url)
         return $content;
     }
         curl_close($ch);
-
 }
 
 
